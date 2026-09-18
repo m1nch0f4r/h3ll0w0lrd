@@ -151,21 +151,24 @@
     .character{--accent:#0aa1b8}
     .char-visual{position:relative;height:278px;margin-bottom:18px}
     .portrait{
-      position:absolute;inset:0 28% 0 0;
-      width:72%;height:100%;object-fit:contain;object-position:center top;
-      background:#dfe5e4;
+      position:absolute;left:0;top:0;bottom:0;
+      width:44%;object-fit:contain;object-position:center top;
+      background:transparent;
       filter:saturate(.9);
       transform:rotate(-1.5deg);
-      box-shadow:0 6px 16px #0002;
+      border:5px solid #fff;
+      box-shadow:0 6px 16px #0003;
+      z-index:1;
     }
     .child{
       position:absolute;right:0;bottom:18px;
-      width:42%;aspect-ratio:1;
+      width:34%;aspect-ratio:1;
       object-fit:cover;
       border:8px solid #fff;
       box-shadow:0 9px 22px #0003;
       transform:rotate(2deg);
       background:#ddd;
+      z-index:2;
     }
     .sticker{
       position:absolute;left:2px;bottom:2px;
@@ -178,25 +181,38 @@
       transform:rotate(-9deg);
       z-index:3;
     }
-    .profile-pic{
-      position:absolute;left:52%;top:4px;
-      width:32%;aspect-ratio:1;
-      object-fit:cover;
-      border:6px solid #fff;
-      box-shadow:0 6px 14px #0003;
+    .profile-wrap{
+      position:absolute;left:44%;bottom:2px;
+      width:28%;aspect-ratio:1;
       transform:rotate(6deg);
+      z-index:1;
+    }
+    .profile-pic{
+      width:100%;height:100%;
+      object-fit:cover;
+      display:block;
+      box-shadow:0 6px 14px #0003;
       background:#ddd;
     }
-    .latin{
-      position:absolute;right:-4px;top:-7px;
-      writing-mode:vertical-rl;
-      color:var(--accent);
-      font:900 37px/.8 Arial,sans-serif;
-      letter-spacing:-.06em;
-      opacity:.92;
-      z-index:2;
-      pointer-events:none;
+    .tape{
+      position:absolute;top:-9px;left:50%;
+      width:48%;height:17px;
+      background:rgba(255,255,255,.55);
+      border:1px solid rgba(255,255,255,.75);
+      transform:translateX(-50%) rotate(-7deg);
+      box-shadow:0 1px 3px #0000001a;
     }
+    .id-tag{
+      position:absolute;left:3px;top:3px;
+      background:rgba(255,255,255,.9);
+      padding:4px 9px 5px;
+      line-height:1.2;
+      box-shadow:0 2px 6px #0002;
+      z-index:2;
+    }
+    .id-tag .kr{display:block;font-size:14px;font-weight:900;color:var(--ink);letter-spacing:-.02em}
+    .id-tag .jp{display:block;font-size:9px;color:#888;margin-top:1px}
+    .id-tag .en{display:block;font-size:8px;letter-spacing:.05em;color:#aaa}
     .char-head{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:end}
     .char-head h2{font-size:31px}
     .nickname{color:var(--accent);font-size:11px;font-weight:800;letter-spacing:.06em;text-align:right}
@@ -342,9 +358,9 @@
         <header class="chapter"><span>CHAPTER 03 · 01</span><span>CHARACTER</span></header>
         <div class="char-visual">
           <img class="portrait" src="https://i.imgur.com/Xm5YqV8.jpeg" alt="타케나카 다이키">
-          <img class="profile-pic" src="https://i.imgur.com/wMz7NNm.jpeg" alt="다이키 챗봇 프로필용 이미지">
+          <div class="profile-wrap"><span class="tape"></span><img class="profile-pic" src="https://i.imgur.com/wMz7NNm.jpeg" alt="다이키 챗봇 프로필용 이미지"></div>
           <img class="child" src="https://i.imgur.com/rTR8ln0.jpeg" alt="어린 시절의 다이키">
-          <span class="latin">DAIKI</span>
+          <div class="id-tag"><span class="kr">다이키</span><span class="jp">竹中大輝</span><span class="en">TAKENAKA DAIKI</span></div>
           <span class="sticker">🥋</span>
         </div>
         <div class="char-head"><h2>타케나카 다이키</h2><span class="nickname">🥋 다이짱</span></div>
@@ -358,25 +374,25 @@
         <header class="chapter"><span>CHAPTER 03 · 02</span><span>CHARACTER</span></header>
         <div class="char-visual">
           <img class="portrait" src="https://i.imgur.com/A3fhuhj.jpeg" alt="마카베 아야토">
-          <img class="profile-pic" src="https://i.imgur.com/Shmj3N9.jpeg" alt="아야토 챗봇 프로필용 이미지">
+          <div class="profile-wrap"><span class="tape"></span><img class="profile-pic" src="https://i.imgur.com/Shmj3N9.jpeg" alt="아야토 챗봇 프로필용 이미지"></div>
           <img class="child" src="https://i.imgur.com/LHXVVv8.jpeg" alt="어린 시절의 아야토">
-          <span class="latin">AYATO</span>
+          <div class="id-tag"><span class="kr">아야토</span><span class="jp">真壁彰斗</span><span class="en">MAKABE AYATO</span></div>
           <span class="sticker">🏥</span>
         </div>
         <div class="char-head"><h2>마카베 아야토</h2><span class="nickname">🏥 아야보</span></div>
         <p class="role">반듯한 미소 뒤에서 답을 고르는, 궁도부의 모범생.</p>
         <p class="description">학생회와 궁도부를 오가는 우등생. 의료 집안의 후계자로서 의대를 준비하지만, 가끔 대답 전의 침묵이 길어집니다.</p>
         <div class="chips"><span>#존댓말도련님</span><span>#학생회</span><span>#정해진진로</span></div>
-        <p class="quote">“혹시…… 제가 기억하는 그 친구가 맞으십니까?”</p>
+        <p class="quote">“혹시…… 제가 기억하는 그 아이가 맞습니까?”</p>
       </article>
 
       <article class="slide character" style="--accent:#00a9c3" aria-label="니시우라 슌 소개">
         <header class="chapter"><span>CHAPTER 03 · 03</span><span>CHARACTER</span></header>
         <div class="char-visual">
           <img class="portrait" src="https://i.imgur.com/e1WkCr3.jpeg" alt="니시우라 슌">
-          <img class="profile-pic" src="https://i.imgur.com/QtCnQgc.jpeg" alt="슌 챗봇 프로필용 이미지">
+          <div class="profile-wrap"><span class="tape"></span><img class="profile-pic" src="https://i.imgur.com/QtCnQgc.jpeg" alt="슌 챗봇 프로필용 이미지"></div>
           <img class="child" src="https://i.imgur.com/v6lr2oe.jpeg" alt="어린 시절의 슌">
-          <span class="latin">SHUN</span>
+          <div class="id-tag"><span class="kr">슌</span><span class="jp">西浦俊</span><span class="en">NISHIURA SHUN</span></div>
           <span class="sticker">🪞</span>
         </div>
         <div class="char-head"><h2>니시우라 슌</h2><span class="nickname">🪞 슌키치</span></div>
@@ -390,9 +406,9 @@
         <header class="chapter"><span>CHAPTER 03 · 04</span><span>CHARACTER</span></header>
         <div class="char-visual">
           <img class="portrait" src="https://i.imgur.com/FdZbaWs.jpeg" alt="아와지마 마코토">
-          <img class="profile-pic" src="https://i.imgur.com/xyKQ8Lb.jpeg" alt="마코토 챗봇 프로필용 이미지">
+          <div class="profile-wrap"><span class="tape"></span><img class="profile-pic" src="https://i.imgur.com/xyKQ8Lb.jpeg" alt="마코토 챗봇 프로필용 이미지"></div>
           <img class="child" src="https://i.imgur.com/QnjOPfV.jpeg" alt="어린 시절의 마코토">
-          <span class="latin">MAKOTO</span>
+          <div class="id-tag"><span class="kr">마코토</span><span class="jp">泡島真琴</span><span class="en">AWAJIMA MAKOTO</span></div>
           <span class="sticker">🎭</span>
         </div>
         <div class="char-head"><h2>아와지마 마코토</h2><span class="nickname">🎭 마코링</span></div>
@@ -406,9 +422,9 @@
         <header class="chapter"><span>CHAPTER 03 · 05</span><span>CHARACTER</span></header>
         <div class="char-visual">
           <img class="portrait" src="https://i.imgur.com/MOH7gQB.jpeg" alt="카미야 쿄타">
-          <img class="profile-pic" src="https://i.imgur.com/VpWqJYf.jpeg" alt="쿄타 챗봇 프로필용 이미지">
+          <div class="profile-wrap"><span class="tape"></span><img class="profile-pic" src="https://i.imgur.com/VpWqJYf.jpeg" alt="쿄타 챗봇 프로필용 이미지"></div>
           <img class="child" src="https://i.imgur.com/2hXxytC.jpeg" alt="어린 시절의 쿄타">
-          <span class="latin">KYOTA</span>
+          <div class="id-tag"><span class="kr">쿄타</span><span class="jp">上屋享多</span><span class="en">KAMIYA KYOTA</span></div>
           <span class="sticker">🏪</span>
         </div>
         <div class="char-head"><h2>카미야 쿄타</h2><span class="nickname">🏪 쿄군</span></div>
