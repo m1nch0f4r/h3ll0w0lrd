@@ -87,8 +87,8 @@
     }
     .cover-head h1{font-size:34px;line-height:.95;letter-spacing:-.08em}
     .cover-head small{font-size:10px;font-weight:800;letter-spacing:.15em;text-align:right}
-    .cover-single{position:relative;width:100%;height:580px;overflow:hidden;background:#d9e7e8}
-    .cover-single .cover-photo{width:100%;height:100%;object-fit:cover;object-position:center 22%;display:block}
+    .cover-single{position:relative;width:100%;height:462px;overflow:hidden;background:#d9e7e8}
+    .cover-single .cover-photo{width:100%;height:100%;object-fit:cover;object-position:center 80%;display:block}
     .cover-single .vertical-title{
       position:absolute;top:18px;left:18px;
       display:block;
@@ -155,6 +155,8 @@
       width:72%;height:100%;object-fit:contain;object-position:center top;
       background:#dfe5e4;
       filter:saturate(.9);
+      transform:rotate(-1.5deg);
+      box-shadow:0 6px 16px #0002;
     }
     .child{
       position:absolute;right:0;bottom:18px;
@@ -164,6 +166,17 @@
       box-shadow:0 9px 22px #0003;
       transform:rotate(2deg);
       background:#ddd;
+    }
+    .sticker{
+      position:absolute;left:2px;bottom:2px;
+      width:42px;height:42px;
+      border-radius:50%;
+      background:#fff;
+      box-shadow:0 4px 10px #0003;
+      display:flex;align-items:center;justify-content:center;
+      font-size:21px;
+      transform:rotate(-9deg);
+      z-index:3;
     }
     .latin{
       position:absolute;right:-4px;top:-7px;
@@ -229,7 +242,7 @@
     }
     @media(max-height:590px){
       .slide{padding-top:16px}
-      .cover-single{height:460px}
+      .cover-single{height:380px}
       .cover-head{height:88px}
       .cover-head h1{font-size:29px}
       .place-hero{height:190px}
@@ -322,6 +335,7 @@
           <img class="portrait" src="https://i.imgur.com/Xm5YqV8.jpeg" alt="타케나카 다이키">
           <img class="child" src="https://i.imgur.com/rTR8ln0.jpeg" alt="어린 시절의 다이키">
           <span class="latin">DAIKI</span>
+          <span class="sticker">🥋</span>
         </div>
         <div class="char-head"><h2>타케나카 다이키</h2><span class="nickname">🥋 다이짱</span></div>
         <p class="role">언제나 그 자리에 있는, 과묵한 유도부 에이스.</p>
@@ -336,8 +350,9 @@
           <img class="portrait" src="https://i.imgur.com/A3fhuhj.jpeg" alt="마카베 아야토">
           <img class="child" src="https://i.imgur.com/LHXVVv8.jpeg" alt="어린 시절의 아야토">
           <span class="latin">AYATO</span>
+          <span class="sticker">🏥</span>
         </div>
-        <div class="char-head"><h2>마카베 아야토</h2><span class="nickname">🏹 아야보</span></div>
+        <div class="char-head"><h2>마카베 아야토</h2><span class="nickname">🏥 아야보</span></div>
         <p class="role">반듯한 미소 뒤에서 답을 고르는, 궁도부의 모범생.</p>
         <p class="description">학생회와 궁도부를 오가는 우등생. 의료 집안의 후계자로서 의대를 준비하지만, 가끔 대답 전의 침묵이 길어집니다.</p>
         <div class="chips"><span>#존댓말도련님</span><span>#학생회</span><span>#정해진진로</span></div>
@@ -350,6 +365,7 @@
           <img class="portrait" src="https://i.imgur.com/e1WkCr3.jpeg" alt="니시우라 슌">
           <img class="child" src="https://i.imgur.com/v6lr2oe.jpeg" alt="어린 시절의 슌">
           <span class="latin">SHUN</span>
+          <span class="sticker">🪞</span>
         </div>
         <div class="char-head"><h2>니시우라 슌</h2><span class="nickname">🪞 슌키치</span></div>
         <p class="role">도쿄를 꿈꾸는, 하야고 제일의 도시파.</p>
@@ -364,6 +380,7 @@
           <img class="portrait" src="https://i.imgur.com/FdZbaWs.jpeg" alt="아와지마 마코토">
           <img class="child" src="https://i.imgur.com/QnjOPfV.jpeg" alt="어린 시절의 마코토">
           <span class="latin">MAKOTO</span>
+          <span class="sticker">🎭</span>
         </div>
         <div class="char-head"><h2>아와지마 마코토</h2><span class="nickname">🎭 마코링</span></div>
         <p class="role">모두의 바람막이를 자처하는, 연극부의 왕자님.</p>
@@ -378,6 +395,7 @@
           <img class="portrait" src="https://i.imgur.com/MOH7gQB.jpeg" alt="카미야 쿄타">
           <img class="child" src="https://i.imgur.com/2hXxytC.jpeg" alt="어린 시절의 쿄타">
           <span class="latin">KYOTA</span>
+          <span class="sticker">🏪</span>
         </div>
         <div class="char-head"><h2>카미야 쿄타</h2><span class="nickname">🏪 쿄군</span></div>
         <p class="role">괜찮다는 말을 지나치게 자연스럽게 하는 아이.</p>
@@ -408,7 +426,7 @@
         </div>
         <div class="map-legend" style="margin-top:10px">
           <span>상태창 아이콘 ·</span>
-          <span>🥋 다이키</span><span>🏹 아야토</span><span>🪞 슌</span><span>🎭 마코토</span><span>🏪 쿄타</span>
+          <span>🥋 다이키</span><span>🏥 아야토</span><span>🪞 슌</span><span>🎭 마코토</span><span>🏪 쿄타</span>
         </div>
         <div class="persona-grid">
           <section><h3>RELATIONSHIP</h3><p>우정과 로맨스 중 어느 쪽도 정답으로 정해져 있지 않습니다.</p></section>
