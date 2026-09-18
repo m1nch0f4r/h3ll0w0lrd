@@ -1,15 +1,419 @@
-<!-- *_IMAGE_URL 교체 --><style>
-:root{--shun:url('https://i.imgur.com/e1WkCr3.jpeg');--shun-child:url('https://i.imgur.com/v6lr2oe.jpeg');--ayato:url('https://i.imgur.com/A3fhuhj.jpeg');--ayato-child:url('https://i.imgur.com/LHXVVv8.jpeg');--daiki:url('https://i.imgur.com/Xm5YqV8.jpeg');--daiki-child:url('https://i.imgur.com/rTR8ln0.jpeg');--makoto:url('https://i.imgur.com/FdZbaWs.jpeg');--makoto-child:url('https://i.imgur.com/QnjOPfV.jpeg');--kyota:url('https://i.imgur.com/MOH7gQB.jpeg');--kyota-child:url('https://i.imgur.com/2hXxytC.jpeg')}
-.char .visual>small{display:none}.char .polaroid div{font-size:0}
-*{box-sizing:border-box}.yy{--navy:#17384a;--sea:#326f78;--paper:#f4ecd9;--red:#a94e3f;--gold:#c7a05a;max-width:780px;margin:auto;color:#173640;background:repeating-linear-gradient(0deg,#d8e4df 0 31px,#c7d8d244 32px);font-family:"Noto Sans KR",sans-serif;overflow:hidden}.yy *{box-sizing:border-box}.yy h1,.yy h2,.yy h3,.yy p{margin:0}.slides{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none}.slides::-webkit-scrollbar{display:none}.card{position:relative;flex:0 0 100%;min-height:600px;padding:42px;scroll-snap-align:start;overflow:hidden;border:10px solid #e6dcc5;background:repeating-linear-gradient(0deg,#f4ecd9 0 35px,#eadfc7 36px)}.no{font:700 12px Georgia,serif;letter-spacing:3px;color:var(--red)}.dots{display:flex;justify-content:center;gap:7px;padding:13px;background:linear-gradient(90deg,#102e3d,#254f5b,#102e3d);border-top:3px double #c7a05a}.dots a{width:9px;height:9px;border:1px solid #fff;border-radius:50%;opacity:.55}.ar{position:absolute;z-index:9;top:50%;width:34px;height:46px;display:grid;place-items:center;color:#fff;background:#17384acc;border:1px solid #c7a05a;text-decoration:none;font:28px/1 Georgia,serif;transform:translateY(-50%)}.ar:hover{background:#a94e3f}.prev{left:6px}.next{right:6px}.hint{position:absolute;right:22px;bottom:18px;font-size:11px;letter-spacing:2px;opacity:.55}.cover{display:flex;align-items:flex-end;color:#f5ead1;background:linear-gradient(90deg,#0d2c3be8,#153e4ec4),var(--cover,url("COVER_IMAGE_URL")) center/cover,linear-gradient(145deg,#102f3e,#345f68);box-shadow:inset 0 0 0 2px #c7a05a,inset 0 0 0 9px #17384a}.cover:before{content:"早瀬高校";position:absolute;right:38px;top:38px;width:104px;height:104px;display:grid;place-items:center;border:4px double #c7a05a;border-radius:50%;color:#c7a05a;font:700 16px Georgia,serif;letter-spacing:2px;transform:rotate(5deg)}.cover h1{color:#e4c887;text-shadow:0 3px #081f29;font:400 clamp(58px,13vw,100px)/.94 Georgia,"Batang",serif;letter-spacing:-7px}.cover .copy{margin:24px 0 18px;font:400 19px/1.7 Georgia,"Batang",serif}.tags{display:flex;flex-wrap:wrap;gap:6px}.tags b{padding:5px 9px;border:1px solid #ffffff80;border-radius:20px;font-size:11px;font-weight:400}.world{display:grid;grid-template-columns:1.05fr .95fr;gap:30px;align-items:center}.world:before{content:"早瀬町\\A季節のご案内";white-space:pre;position:absolute;right:22px;top:20px;padding:7px;border:3px double var(--red);color:var(--red);font:700 11px/1.25 Georgia,serif;text-align:center;transform:rotate(6deg)}.map{position:relative;min-height:430px;border:1px solid #28738666;background:var(--town,url('TOWN_IMAGE_URL')) center/cover,linear-gradient(145deg,#c6dfdd,#e4d4b7);box-shadow:12px 14px 0 #1d6f811c;transform:rotate(-1deg)}.map:after{content:"早瀬町";position:absolute;left:22px;top:18px;font:700 24px Georgia,serif}.pin{position:absolute;padding:5px 8px;background:#fffdf0dd;border:1px solid #17364044;font-size:10px;font-weight:700;box-shadow:3px 3px #17364018}.p1{left:8%;top:45%}.p2{left:36%;top:31%}.p3{right:8%;top:17%}.p4{right:12%;top:54%}.p5{left:12%;bottom:12%}.p6{right:7%;bottom:7%}.world h2,.you h2,.guide h2{margin:8px 0 20px;font:700 34px/1.25 Georgia,"Batang",serif}.world .lead,.you .lead{font:700 17px/1.75 Georgia,"Batang",serif}.world p,.you p{margin-top:14px;font-size:13px;line-height:1.8;color:#52666c}.school{margin-top:20px;padding:14px;border-top:1px solid;border-bottom:1px solid;font-size:11px;line-height:1.8}.char{--accent:#a87945;display:grid;grid-template-columns:44% 56%;padding:18px;color:var(--navy);background:repeating-linear-gradient(90deg,#f4ecd9 0 48px,#eadfc7 49px)}.visual{position:relative;min-height:564px;border:8px solid #f8f0de;outline:1px solid #17364066;background:linear-gradient(0deg,#071f29b5,transparent 60%),var(--img,url('CHARACTER_IMAGE_URL')) center top/cover,linear-gradient(145deg,var(--accent),#173844 72%)}.visual .letter{position:absolute;right:5%;top:4%;font:180px/1 Georgia,serif;color:#ffffff10}.visual small{position:absolute;left:18px;bottom:18px;padding:3px 6px;color:#173640;background:#f6efdccc;font-size:9px;letter-spacing:2px}.polaroid{position:absolute;right:-28px;top:70px;width:42%;aspect-ratio:4/5;padding:7px 7px 25px;background:#fff7e7;box-shadow:0 12px 25px #0005;transform:rotate(5deg);z-index:2}.polaroid:before,.polaroid:after{content:"";position:absolute;width:26px;height:26px;border-color:#9b845f88}.polaroid:before{left:-5px;top:-5px;border-left:3px solid;border-top:3px solid}.polaroid:after{right:-5px;bottom:-5px;border-right:3px solid;border-bottom:3px solid}.polaroid div{width:100%;height:100%;display:grid;place-items:center;color:#ffffffaa;font:10px Georgia,serif;background:var(--child,url('CHILD_IMAGE_URL')) center/cover,linear-gradient(145deg,var(--accent),#718f93)}.bio{align-self:center;padding:38px 34px 38px 46px;border-left:1px dashed #17364044}.bio .idx{color:var(--accent);font:11px Georgia,serif;letter-spacing:2px}.bio h2{margin:7px 0 2px;color:var(--navy);font:700 38px/1.15 Georgia,"Batang",serif;letter-spacing:-2px}.bio .roman{display:block;margin-bottom:18px;font-size:9px;letter-spacing:2px;opacity:.4}.role{color:var(--accent);font:700 15px/1.65 Georgia,"Batang",serif}.desc{margin-top:13px!important;font-size:12px;line-height:1.85;color:#425b63}.keys{display:flex;flex-wrap:wrap;gap:5px;margin-top:15px}.keys span{padding:3px 7px;border:1px solid color-mix(in srgb,var(--accent) 55%,transparent);border-radius:14px;font-size:9px;color:var(--accent)}.quote{margin-top:21px!important;padding:12px;border:1px solid #17364033;background:#fff8e8aa;color:var(--navy);font:400 14px/1.75 Georgia,"Batang",serif;transform:rotate(-1deg)}.you{display:grid;grid-template-columns:46% 54%;gap:28px;align-items:center}.userpic{position:relative;min-height:470px;background:linear-gradient(0deg,#12384499,transparent),var(--user,url('USER_IMAGE_URL')) center/cover,linear-gradient(145deg,#8bb8bf,#1e6575);box-shadow:12px 14px #1d6f811c}.userpic:after{content:"?";position:absolute;inset:0;display:grid;place-items:center;color:#ffffff44;font:180px Georgia,serif}.list{margin-top:18px;padding:13px 15px;background:#ffffff88;border-left:3px solid var(--sea);font-size:11px;line-height:1.9}.guide{color:#f7edd7;background:repeating-linear-gradient(135deg,#183b4a 0 12px,#204856 13px 24px);box-shadow:inset 0 0 0 4px #c7a05a,inset 0 0 0 9px #183b4a}.guide h2{color:#fff}.guidegrid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:26px}.guidegrid div{padding:14px;border:1px solid #ffffff28}.guidegrid b{display:block;color:#efbc78;font:700 13px Georgia,"Batang",serif}.guidegrid span{font-size:10px;line-height:1.6;opacity:.7}.cmd{margin-top:18px;padding:15px;background:#f6f0df;color:#173640;font-size:11px;line-height:2}.cmd code{padding:2px 5px;color:#fff;background:var(--red)}.end{margin-top:26px;text-align:center;font:400 17px/1.8 Georgia,"Batang",serif}.end b{color:#efbc78}@media(max-width:600px){.card{min-height:660px;padding:28px}.world,.you{grid-template-columns:1fr}.map{min-height:285px}.world h2,.you h2,.guide h2{font-size:27px}.char{grid-template-columns:1fr}.visual{min-height:310px}.polaroid{right:18px;top:35px;width:28%}.bio{padding:28px}.bio h2{font-size:31px}.userpic{min-height:280px}.guidegrid{grid-template-columns:1fr 1fr}.cover h1{letter-spacing:-4px}}
-</style></head><body><div class="yy"><div class="slides">
-<section class="card cover" id="c0"><div><span class="no">県立早瀬高等学校 · 2000s</span><h1>유루리<br>유라유라</h1><p class="copy">10년 만에 돌아온 바닷마을.<br>그곳에는, 이제는 조금 낯설어진 옛 친구들이 있었다.</p><div class="tags"><b>#소꿉친구재회</b><b>#다인시뮬레이션</b><b>#일본고교청춘물</b><b>#관계성중심</b></div></div><span class="hint">CLICK →</span><a class="ar prev" href="#c8" aria-label="이전">‹</a><a class="ar next" href="#c1" aria-label="다음">›</a></section>
-<section class="card world" id="c1"><div class="map"><i class="pin p1">하야세카이간역</i><i class="pin p2">상점가</i><i class="pin p3">하야세고</i><i class="pin p4">종합병원</i><i class="pin p5">포구</i><i class="pin p6">보트 창고</i></div><div><span class="no">01 · PLACE</span><h2>다시 돌아온<br>하야세마치</h2><p class="lead">도쿄에서 전철로 한 시간 남짓. 바다와 밭, 오래된 상점가가 맞닿은 작은 해안도시.</p><p>당신은 이곳을 떠난 지 약 10년 만에, 고등학교 2학년 전학생이 되어 돌아온다. 그대로 남은 풍경과 전혀 달라진 옛 친구들 사이로.</p><div class="school"><b>가나가와 현립 하야세고등학교</b><br>2000년대 중후반 · 고2 새 학기 · 첫 장면은 등굣길 언덕</div></div><a class="ar prev" href="#c0" aria-label="이전">‹</a><a class="ar next" href="#c2" aria-label="다음">›</a></section>
-<section class="card char" id="c2" style="--accent:#dfad64;--img:var(--daiki,url('DAIKI_IMAGE_URL'));--child:var(--daiki-child,url('DAIKI_CHILD_IMAGE_URL'))"><div class="visual"><span class="letter">D</span><small>二年・春</small><div class="polaroid"><div>あの頃</div></div></div><div class="bio"><span class="idx">02 · DAIKI</span><h2>타케나카<br>다이키</h2><span class="roman">어린 시절 별명 · 다이짱</span><p class="role">언제나 그 자리에 있는,<br>과묵한 유도부 에이스.</p><p class="desc">졸업 후에는 가족의 농사를 이을 생각이다. 오래전 기억을 누구보다 선명하게 간직하고 있는 듯하다.</p><div class="keys"><span>#유도부</span><span>#남는사람</span><span>#과묵한소꿉친구</span></div><p class="quote">“……많이 변했네. 그래도 알아보긴 했어.”</p></div><a class="ar prev" href="#c1" aria-label="이전">‹</a><a class="ar next" href="#c3" aria-label="다음">›</a></section>
-<section class="card char" id="c3" style="--accent:#9fcbd3;--img:var(--ayato,url('AYATO_IMAGE_URL'));--child:var(--ayato-child,url('AYATO_CHILD_IMAGE_URL'))"><div class="visual"><span class="letter">A</span><small>二年・春</small><div class="polaroid"><div>あの頃</div></div></div><div class="bio"><span class="idx">03 · AYATO</span><h2>마카베<br>아야토</h2><span class="roman">어린 시절 별명 · 아야보</span><p class="role">반듯한 미소 뒤에서 답을 고르는,<br>궁도부의 모범생.</p><p class="desc">학생회와 궁도부를 오가는 우등생. 의료 집안의 후계자로서 의대를 준비하고 있지만, 가끔 대답 전의 침묵이 길어진다.</p><div class="keys"><span>#존댓말도련님</span><span>#학생회</span><span>#정해진진로</span></div><p class="quote">“혹시…… 제가 기억하는 그 아이가 맞습니까?”</p></div><a class="ar prev" href="#c2" aria-label="이전">‹</a><a class="ar next" href="#c4" aria-label="다음">›</a></section>
-<section class="card char" id="c4" style="--accent:#66d6df;--img:var(--shun,url('SHUN_IMAGE_URL'));--child:var(--shun-child,url('SHUN_CHILD_IMAGE_URL'))"><div class="visual"><span class="letter">S</span><small>二年・春</small><div class="polaroid"><div>あの頃</div></div></div><div class="bio"><span class="idx">04 · SHUN</span><h2>니시우라<br>슌</h2><span class="roman">어린 시절 별명 · 슌키치</span><p class="role">도쿄를 꿈꾸는,<br>하야고 제일의 도시파.</p><p class="desc">촌스럽다는 말을 무엇보다 싫어한다. 도쿄의 명문대 진학을 꿈꾸며 누구보다 바쁘게 달리는 중.</p><div class="keys"><span>#츤데레</span><span>#도쿄지망</span><span>#숨은노력파</span></div><p class="quote">“그 이름으로 부르지 마! 대체 언제 적 별명이냐고!”</p></div><a class="ar prev" href="#c3" aria-label="이전">‹</a><a class="ar next" href="#c5" aria-label="다음">›</a></section>
-<section class="card char" id="c5" style="--accent:#e89278;--img:var(--makoto,url('MAKOTO_IMAGE_URL'));--child:var(--makoto-child,url('MAKOTO_CHILD_IMAGE_URL'))"><div class="visual"><span class="letter">M</span><small>二年・春</small><div class="polaroid"><div>あの頃</div></div></div><div class="bio"><span class="idx">05 · MAKOTO</span><h2>아와지마<br>마코토</h2><span class="roman">어린 시절 별명 · 마코링</span><p class="role">모두의 바람막이를 자처하는,<br>연극부의 왕자님.</p><p class="desc">연극부의 간판 배우. 당차고 완벽해 보이지만, 정작 자신이 보살핌을 받는 상황에는 영 서툴다.</p><div class="keys"><span>#연극부로미오</span><span>#왕자님</span><span>#서툰보호자</span></div><p class="quote">“걱정할 것 없어. 이번에는 내가 네 곁에 있을 테니까.”</p></div><a class="ar prev" href="#c4" aria-label="이전">‹</a><a class="ar next" href="#c6" aria-label="다음">›</a></section>
-<section class="card char" id="c6" style="--accent:#b1adca;--img:var(--kyota,url('KYOTA_IMAGE_URL'));--child:var(--kyota-child,url('KYOTA_CHILD_IMAGE_URL'))"><div class="visual"><span class="letter">K</span><small>二年・春</small><div class="polaroid"><div>あの頃</div></div></div><div class="bio"><span class="idx">06 · KYOTA</span><h2>카미야<br>쿄타</h2><span class="roman">어린 시절 별명 · 쿄군</span><p class="role">괜찮다는 말을<br>지나치게 자연스럽게 하는 아이.</p><p class="desc">조용하고 입이 무거운 소꿉친구. 방과 후에는 여러 아르바이트를 오가며, 자신의 사정은 좀처럼 꺼내지 않는다.</p><div class="keys"><span>#과묵한알바생</span><span>#밤의방파제</span><span>#혼자버티는사람</span></div><p class="quote">“……나보다 네 얘기부터 해. 도쿄에서는 어떻게 지냈어?”</p></div><a class="ar prev" href="#c5" aria-label="이전">‹</a><a class="ar next" href="#c7" aria-label="다음">›</a></section>
-<section class="card you" id="c7"><div class="userpic"></div><div><span class="no">07 · {{USER}}</span><h2>그리고,<br>돌아온 당신</h2><p class="lead">마지막 한 사람은 당신입니다.</p><p>다섯 친구와 함께 자라다 도쿄로 떠난 뒤, 약 10년 만에 하야세마치로 돌아왔다. 그동안 어떤 사람이 되었는지, 왜 돌아왔는지, 누구를 가장 선명하게 기억하는지는 당신이 정한다.</p><div class="list"><b>고정 설정</b> · 고2 전학생 / 다섯 명의 옛 소꿉친구<br><b>자유 설정</b> · 이름 / 성별·젠더 / 외모 / 성격 / 귀향 이유 / 어린 시절 별명 / 말하지 않은 비밀<br><small>※ 프로필의 비밀은 직접 밝히기 전까지 캐릭터가 알지 못합니다.</small></div></div><a class="ar prev" href="#c6" aria-label="이전">‹</a><a class="ar next" href="#c8" aria-label="다음">›</a></section>
-<section class="card guide" id="c8"><span class="no">08 · 早瀬町 青春案内</span><h2>당신의 속도로<br>가까워지는 이야기</h2><div class="guidegrid"><div><b>다시 알아가기</b><span>서로 다르게 남은 유년기의 기억을 확인합니다.</span></div><div><b>계절을 함께 보내기</b><span>시험과 축제, 문화제 사이로 일상이 흐릅니다.</span></div><div><b>관계 선택하기</b><span>우정과 로맨스 어느 쪽도 정답은 아닙니다.</span></div><div><b>진로 지켜보기</b><span>떠나려는 사람과 남으려는 사람이 답을 찾습니다.</span></div></div><div class="cmd"><code>!일기</code> 현재 상대가 말하지 못한 마음<br><code>!속마음</code> 지금 이 순간의 짧은 속마음<br><code>!일기 이름</code> 등장한 특정 인물의 일기</div><p class="end">바다 냄새가 섞인 바람이 언덕을 타고 불어온다.<br>아직 누구와도 마주치지 않은 전학 첫날의 아침.<br><br><b>자, 어떻게 할까?</b></p><a class="ar prev" href="#c7" aria-label="이전">‹</a><a class="ar next" href="#c0" aria-label="다음">›</a></section>
-</div><nav class="dots" aria-label="카드 선택"><a href="#c0"></a><a href="#c1"></a><a href="#c2"></a><a href="#c3"></a><a href="#c4"></a><a href="#c5"></a><a href="#c6"></a><a href="#c7"></a><a href="#c8"></a></nav></div>
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#f8f8f5">
+  <title>유루리 유라유라 · 하야세마치 가이드</title>
+  <meta name="description" content="해안 소도시 하야세마치와 다섯 소꿉친구를 소개하는 모바일 가이드북">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230c9fb6'/%3E%3Cpath d='M8 39c10-9 19-9 28 0 8 7 14 7 20 0v9c-8 7-16 7-24 0-8-7-16-7-24 0z' fill='white'/%3E%3C/svg%3E">
+  <style>
+    :root{
+      --ink:#171717;
+      --paper:#f8f8f5;
+      --blue:#00a9c3;
+      --line:#d9d9d4;
+      --muted:#777;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0}
+    body{
+      background:#e7e7e4;
+      color:var(--ink);
+      font-family:Pretendard,"Noto Sans KR","Apple SD Gothic Neo",Arial,sans-serif;
+      overflow:hidden;
+    }
+    button{font:inherit}
+    .book{
+      position:relative;
+      width:100%;
+      max-width:520px;
+      height:100dvh;
+      max-height:650px;
+      min-height:540px;
+      margin:0 auto;
+      overflow:hidden;
+      background:var(--paper);
+      box-shadow:0 8px 40px #0002;
+      isolation:isolate;
+    }
+    .track{
+      display:flex;
+      width:100%;
+      height:100%;
+      transition:transform .42s cubic-bezier(.22,.75,.24,1);
+      will-change:transform;
+    }
+    .slide{
+      position:relative;
+      flex:0 0 100%;
+      width:100%;
+      height:100%;
+      padding:24px 24px 70px;
+      overflow-y:auto;
+      overscroll-behavior:contain;
+      scrollbar-width:none;
+      background:var(--paper);
+    }
+    .slide::-webkit-scrollbar{display:none}
+    .chapter{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      margin-bottom:17px;
+      padding-bottom:10px;
+      border-bottom:1px solid var(--ink);
+      font-size:12px;
+      font-weight:800;
+      letter-spacing:.12em;
+    }
+    .chapter span:last-child{color:var(--muted);font-weight:500}
+    .eyebrow{font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+    h1,h2,h3,p{margin:0}
+    h2{font-size:29px;line-height:1.15;letter-spacing:-.055em}
+    p{font-size:14px;line-height:1.72;word-break:keep-all}
+    .muted{color:var(--muted)}
+
+    /* cover */
+    .cover{padding:0 0 64px;background:#fff}
+    .cover-head{
+      height:104px;
+      padding:24px 26px 14px;
+      display:flex;
+      align-items:flex-end;
+      justify-content:space-between;
+      border-bottom:1px solid #eee;
+    }
+    .cover-head h1{font-size:34px;line-height:.95;letter-spacing:-.08em}
+    .cover-head small{font-size:10px;font-weight:800;letter-spacing:.15em;text-align:right}
+    .cover-grid{
+      display:grid;
+      grid-template-columns:54px minmax(0,1fr) 38px;
+      grid-template-rows:205px 245px;
+      gap:12px 0;
+      padding-top:12px;
+    }
+    .vertical-title{
+      grid-row:1/3;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      writing-mode:vertical-rl;
+      text-orientation:mixed;
+      font:900 clamp(38px,12vw,58px)/.84 Arial,sans-serif;
+      letter-spacing:-.08em;
+      transform:rotate(180deg);
+      -webkit-text-stroke:1px #fff;
+      z-index:2;
+    }
+    .cover-photo{width:100%;height:100%;object-fit:cover;display:block;background:#d9e7e8}
+    .town-cover{grid-column:2/4;grid-row:1}
+    .school-cover{grid-column:1/3;grid-row:2}
+    .side-note{
+      grid-column:3;
+      grid-row:2;
+      display:flex;
+      align-items:flex-end;
+      justify-content:center;
+      padding-bottom:10px;
+      writing-mode:vertical-rl;
+      font-size:13px;
+      font-weight:800;
+      letter-spacing:.12em;
+    }
+    .cover-foot{
+      height:55px;
+      display:flex;
+      align-items:center;
+      gap:8px;
+      padding:0 24px;
+      font-size:11px;
+      font-weight:750;
+      letter-spacing:.04em;
+      white-space:nowrap;
+      overflow:hidden;
+    }
+    .cover-foot i{width:4px;height:4px;border-radius:50%;background:var(--blue);flex:none}
+
+    /* chapter 1 */
+    .place-hero{position:relative;height:235px;margin:0 -24px 20px;overflow:hidden;background:#d9e7e8}
+    .place-hero img{width:100%;height:100%;object-fit:cover;display:block}
+    .place-hero:after{content:"HAYASE";position:absolute;right:14px;bottom:6px;color:#fff;font:900 44px/1 Arial,sans-serif;letter-spacing:-.06em;text-shadow:0 2px 12px #0005}
+    .place-title{display:grid;grid-template-columns:1fr 88px;gap:14px;align-items:start}
+    .place-title .mark{border-top:5px solid var(--blue);padding-top:8px;color:var(--blue);font:900 13px/1.2 Arial,sans-serif;letter-spacing:.12em}
+    .place-copy{margin-top:14px;color:#444}
+    .school-strip{display:grid;grid-template-columns:110px 1fr;gap:14px;margin-top:18px;padding-top:14px;border-top:1px solid var(--line)}
+    .school-strip img{width:110px;height:78px;object-fit:cover;background:#ddd}
+    .school-strip b{display:block;margin:1px 0 5px;font-size:14px}
+    .school-strip p{font-size:12px;line-height:1.55;color:#666}
+
+    /* characters */
+    .character{--accent:#0aa1b8}
+    .char-visual{position:relative;height:278px;margin-bottom:18px}
+    .portrait{
+      position:absolute;inset:0 28% 0 0;
+      width:72%;height:100%;object-fit:cover;object-position:center top;
+      background:#dfe5e4;
+      filter:saturate(.9);
+    }
+    .child{
+      position:absolute;right:0;bottom:18px;
+      width:42%;aspect-ratio:1;
+      object-fit:cover;
+      border:8px solid #fff;
+      box-shadow:0 9px 22px #0003;
+      transform:rotate(2deg);
+      background:#ddd;
+    }
+    .latin{
+      position:absolute;right:-4px;top:-7px;
+      writing-mode:vertical-rl;
+      color:var(--accent);
+      font:900 37px/.8 Arial,sans-serif;
+      letter-spacing:-.06em;
+      opacity:.92;
+      z-index:2;
+      pointer-events:none;
+    }
+    .char-head{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:end}
+    .char-head h2{font-size:31px}
+    .nickname{color:var(--accent);font-size:11px;font-weight:800;letter-spacing:.06em;text-align:right}
+    .role{margin-top:7px;color:var(--accent);font-size:14px;font-weight:800;line-height:1.45}
+    .description{margin-top:10px;color:#505050;font-size:13px;line-height:1.63}
+    .chips{display:flex;gap:6px;flex-wrap:wrap;margin-top:11px}
+    .chips span{padding:5px 8px;border:1px solid var(--accent);color:var(--accent);font-size:10px;font-weight:750}
+    .quote{margin-top:12px;padding:10px 12px;border-left:4px solid var(--accent);background:#fff;font-family:Georgia,"Batang",serif;font-size:13px;line-height:1.55}
+
+    /* chapter 3 */
+    .you-mark{display:flex;align-items:flex-end;justify-content:space-between;height:112px;margin-bottom:17px;border-bottom:7px solid var(--blue)}
+    .you-mark strong{font:900 86px/.76 Arial,sans-serif;letter-spacing:-.09em}
+    .you-mark span{padding-bottom:7px;color:var(--blue);font-size:12px;font-weight:800;letter-spacing:.1em}
+    .intro{margin-top:12px;color:#4d4d4d}
+    .persona-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:16px}
+    .persona-grid section{min-height:122px;padding:13px;border:1px solid var(--ink);background:#fff}
+    .persona-grid h3{margin-bottom:8px;color:var(--blue);font-size:12px;letter-spacing:.08em}
+    .persona-grid p{font-size:12px;line-height:1.6;color:#555}
+    .secret{margin-top:11px;padding:11px 13px;background:var(--ink);color:#fff;font-size:12px;line-height:1.55}
+
+    .commands{display:grid;gap:9px;margin-top:18px}
+    .command{display:grid;grid-template-columns:92px 1fr;gap:12px;align-items:center;padding:13px;background:#fff;border:1px solid var(--line)}
+    .command code{color:var(--blue);font:900 14px/1.2 monospace}
+    .command p{font-size:12px;line-height:1.5;color:#555}
+    .closing{margin-top:18px;padding:18px;border-top:6px solid var(--blue);background:#eaf8fa}
+    .closing p{font-family:Georgia,"Batang",serif;font-size:14px;line-height:1.7}
+    .closing b{display:block;margin-top:8px;font-size:16px}
+
+    /* controls */
+    .controls{
+      position:absolute;left:0;right:0;bottom:0;z-index:20;
+      height:58px;
+      display:grid;
+      grid-template-columns:58px 1fr 58px;
+      align-items:center;
+      background:#fff;
+      border-top:1px solid var(--ink);
+    }
+    .nav-btn{height:100%;border:0;background:#fff;color:var(--ink);font-size:25px;cursor:pointer;touch-action:manipulation}
+    .nav-btn:active{background:var(--blue);color:#fff}
+    .progress{display:flex;align-items:center;justify-content:center;gap:11px}
+    .counter{min-width:44px;font:800 11px/1 Arial,sans-serif;letter-spacing:.08em;text-align:center}
+    .dots{display:flex;gap:5px;align-items:center}
+    .dot{width:6px;height:6px;padding:0;border:0;border-radius:50%;background:#c7c7c2;cursor:pointer}
+    .dot.active{width:18px;border-radius:6px;background:var(--blue)}
+    .swipe-hint{position:absolute;right:17px;top:12px;z-index:4;padding:5px 7px;background:#fff;color:#555;font-size:9px;font-weight:800;letter-spacing:.08em}
+    button:focus-visible{outline:3px solid var(--blue);outline-offset:-3px}
+
+    @media(min-width:700px){
+      body{display:grid;place-items:center;padding:18px}
+      .book{border:1px solid #bbb}
+    }
+    @media(max-height:590px){
+      .slide{padding-top:16px}
+      .cover-grid{grid-template-rows:175px 205px}
+      .cover-head{height:88px}
+      .cover-head h1{font-size:29px}
+      .place-hero{height:190px}
+      .char-visual{height:220px}
+      .description{line-height:1.5}
+    }
+    @media(prefers-reduced-motion:reduce){.track{transition:none}}
+  </style>
+</head>
+<body>
+  <main class="book" aria-label="유루리 유라유라 작품 가이드">
+    <div class="track" id="track">
+      <article class="slide cover" aria-label="표지">
+        <header class="cover-head">
+          <h1>유루리<br>유라유라</h1>
+          <small>HAYASE · 2000s<br>STORY GUIDE</small>
+        </header>
+        <div class="cover-grid">
+          <div class="vertical-title">HAYASE</div>
+          <img class="cover-photo town-cover" src="https://i.imgur.com/Fj5WdZV.jpeg" alt="바다와 상점가가 보이는 하야세마치 전경">
+          <img class="cover-photo school-cover" src="https://i.imgur.com/huHYEa9.jpeg" alt="언덕 위에 자리한 하야세고등학교 전경">
+          <div class="side-note">GUIDE BOOK · 2000s</div>
+        </div>
+        <footer class="cover-foot"><span>소꿉친구 재회</span><i></i><span>해안 소도시</span><i></i><span>고교 청춘 시뮬레이션</span></footer>
+      </article>
+
+      <article class="slide" aria-label="하야세마치와 하야세고교">
+        <header class="chapter"><span>CHAPTER 01</span><span>PLACE &amp; SCHOOL</span></header>
+        <div class="place-hero"><img src="https://i.imgur.com/Fj5WdZV.jpeg" alt="하야세마치 풍경"></div>
+        <div class="place-title">
+          <div><p class="eyebrow">다시 돌아온 바닷마을</p><h2>하야세마치</h2></div>
+          <div class="mark">10 YEARS<br>AFTER</div>
+        </div>
+        <p class="place-copy">도쿄에서 전철로 한 시간 남짓. 바다와 밭, 오래된 상점가가 맞닿은 작은 해안도시. 당신은 이곳을 떠난 지 약 10년 만에 고등학교 2학년 전학생이 되어 돌아옵니다.</p>
+        <div class="school-strip">
+          <img src="https://i.imgur.com/huHYEa9.jpeg" alt="하야세고등학교">
+          <div><b>가나가와 현립 하야세고등학교</b><p>2000년대 중후반 · 고2 새 학기<br>첫 장면은 학교로 향하는 언덕길</p></div>
+        </div>
+      </article>
+
+      <article class="slide character" style="--accent:#c78b35" aria-label="타케나카 다이키 소개">
+        <header class="chapter"><span>CHAPTER 02 · 01</span><span>CHARACTER</span></header>
+        <div class="char-visual">
+          <img class="portrait" src="https://i.imgur.com/Xm5YqV8.jpeg" alt="타케나카 다이키">
+          <img class="child" src="https://i.imgur.com/rTR8ln0.jpeg" alt="어린 시절의 다이키">
+          <span class="latin">DAIKI</span>
+        </div>
+        <div class="char-head"><h2>타케나카 다이키</h2><span class="nickname">다이짱</span></div>
+        <p class="role">언제나 그 자리에 있는, 과묵한 유도부 에이스.</p>
+        <p class="description">졸업 후에는 가족의 농사를 이을 생각입니다. 오래전 기억을 누구보다 선명하게 간직하고 있는 듯합니다.</p>
+        <div class="chips"><span>#유도부</span><span>#남는사람</span><span>#과묵한소꿉친구</span></div>
+        <p class="quote">“……많이 변했네. 그래도 알아보긴 했어.”</p>
+      </article>
+
+      <article class="slide character" style="--accent:#4893a5" aria-label="마카베 아야토 소개">
+        <header class="chapter"><span>CHAPTER 02 · 02</span><span>CHARACTER</span></header>
+        <div class="char-visual">
+          <img class="portrait" src="https://i.imgur.com/A3fhuhj.jpeg" alt="마카베 아야토">
+          <img class="child" src="https://i.imgur.com/LHXVVv8.jpeg" alt="어린 시절의 아야토">
+          <span class="latin">AYATO</span>
+        </div>
+        <div class="char-head"><h2>마카베 아야토</h2><span class="nickname">아야보</span></div>
+        <p class="role">반듯한 미소 뒤에서 답을 고르는, 궁도부의 모범생.</p>
+        <p class="description">학생회와 궁도부를 오가는 우등생. 의료 집안의 후계자로서 의대를 준비하지만, 가끔 대답 전의 침묵이 길어집니다.</p>
+        <div class="chips"><span>#존댓말도련님</span><span>#학생회</span><span>#정해진진로</span></div>
+        <p class="quote">“혹시…… 제가 기억하는 그 아이가 맞습니까?”</p>
+      </article>
+
+      <article class="slide character" style="--accent:#00a9c3" aria-label="니시우라 슌 소개">
+        <header class="chapter"><span>CHAPTER 02 · 03</span><span>CHARACTER</span></header>
+        <div class="char-visual">
+          <img class="portrait" src="https://i.imgur.com/e1WkCr3.jpeg" alt="니시우라 슌">
+          <img class="child" src="https://i.imgur.com/v6lr2oe.jpeg" alt="어린 시절의 슌">
+          <span class="latin">SHUN</span>
+        </div>
+        <div class="char-head"><h2>니시우라 슌</h2><span class="nickname">슌키치</span></div>
+        <p class="role">도쿄를 꿈꾸는, 하야고 제일의 도시파.</p>
+        <p class="description">촌스럽다는 말을 무엇보다 싫어합니다. 도쿄의 명문대 진학을 꿈꾸며 누구보다 바쁘게 달리는 중입니다.</p>
+        <div class="chips"><span>#츤데레</span><span>#도쿄지망</span><span>#숨은노력파</span></div>
+        <p class="quote">“그 이름으로 부르지 마! 대체 언제 적 별명이냐고!”</p>
+      </article>
+
+      <article class="slide character" style="--accent:#d76554" aria-label="아와지마 마코토 소개">
+        <header class="chapter"><span>CHAPTER 02 · 04</span><span>CHARACTER</span></header>
+        <div class="char-visual">
+          <img class="portrait" src="https://i.imgur.com/FdZbaWs.jpeg" alt="아와지마 마코토">
+          <img class="child" src="https://i.imgur.com/QnjOPfV.jpeg" alt="어린 시절의 마코토">
+          <span class="latin">MAKOTO</span>
+        </div>
+        <div class="char-head"><h2>아와지마 마코토</h2><span class="nickname">마코링</span></div>
+        <p class="role">모두의 바람막이를 자처하는, 연극부의 왕자님.</p>
+        <p class="description">연극부의 간판 배우. 당차고 완벽해 보이지만, 정작 자신이 보살핌을 받는 상황에는 영 서툽니다.</p>
+        <div class="chips"><span>#연극부로미오</span><span>#왕자님</span><span>#서툰보호자</span></div>
+        <p class="quote">“걱정할 것 없어. 이번에는 내가 네 곁에 있을 테니까.”</p>
+      </article>
+
+      <article class="slide character" style="--accent:#69618e" aria-label="카미야 쿄타 소개">
+        <header class="chapter"><span>CHAPTER 02 · 05</span><span>CHARACTER</span></header>
+        <div class="char-visual">
+          <img class="portrait" src="https://i.imgur.com/MOH7gQB.jpeg" alt="카미야 쿄타">
+          <img class="child" src="https://i.imgur.com/2hXxytC.jpeg" alt="어린 시절의 쿄타">
+          <span class="latin">KYOTA</span>
+        </div>
+        <div class="char-head"><h2>카미야 쿄타</h2><span class="nickname">쿄군</span></div>
+        <p class="role">괜찮다는 말을 지나치게 자연스럽게 하는 아이.</p>
+        <p class="description">조용하고 입이 무거운 소꿉친구. 방과 후에는 여러 아르바이트를 오가며, 자신의 사정은 좀처럼 꺼내지 않습니다.</p>
+        <div class="chips"><span>#과묵한알바생</span><span>#밤의방파제</span><span>#혼자버티는사람</span></div>
+        <p class="quote">“……나보다 네 얘기부터 해. 도쿄에서는 어떻게 지냈어?”</p>
+      </article>
+
+      <article class="slide" aria-label="유저 페르소나 작성 도움">
+        <header class="chapter"><span>CHAPTER 03 · 01</span><span>YOUR PERSONA</span></header>
+        <div class="you-mark"><strong>YOU</strong><span>돌아온 여섯 번째 친구</span></div>
+        <h2>그리고,<br>하야세마치로 돌아온 당신</h2>
+        <p class="intro">다섯 친구와 함께 자라다 도쿄로 떠난 뒤, 약 10년 만에 돌아왔습니다. 그동안 어떤 사람이 되었는지와 귀향한 이유는 직접 정할 수 있습니다.</p>
+        <div class="persona-grid">
+          <section><h3>FIXED · 고정 설정</h3><p>고등학교 2학년 전학생<br>다섯 명의 옛 소꿉친구<br>약 10년 만의 귀향</p></section>
+          <section><h3>FREE · 자유 설정</h3><p>이름 · 성별과 젠더 · 외모<br>성격 · 귀향 이유 · 별명<br>말하지 않은 비밀</p></section>
+        </div>
+        <div class="secret"><b>비밀 설정 안내</b><br>프로필에 적은 비밀은 직접 말하거나 행동으로 드러내기 전까지 캐릭터가 알지 못합니다.</div>
+      </article>
+
+      <article class="slide" aria-label="명령어와 시작 안내">
+        <header class="chapter"><span>CHAPTER 03 · 02</span><span>PLAY GUIDE</span></header>
+        <p class="eyebrow">당신의 속도로 가까워지는 이야기</p>
+        <h2 style="margin-top:6px">대화 중 사용할 수 있는<br>간단한 명령어</h2>
+        <div class="commands">
+          <div class="command"><code>!일기</code><p>현재 대화 상대가 말하지 못한 마음을 확인합니다.</p></div>
+          <div class="command"><code>!속마음</code><p>지금 이 순간 상대가 떠올린 짧은 생각을 봅니다.</p></div>
+          <div class="command"><code>!일기 이름</code><p>이미 등장한 특정 인물의 일기를 확인합니다.</p></div>
+        </div>
+        <div class="persona-grid">
+          <section><h3>RELATIONSHIP</h3><p>우정과 로맨스 중 어느 쪽도 정답으로 정해져 있지 않습니다.</p></section>
+          <section><h3>SEASON</h3><p>시험과 축제, 문화제 사이로 관계와 진로가 달라집니다.</p></section>
+        </div>
+        <div class="closing"><p>바다 냄새가 섞인 바람이 언덕을 타고 불어옵니다. 아직 누구와도 마주치지 않은 전학 첫날의 아침.</p><b>자, 어떻게 할까요?</b></div>
+      </article>
+    </div>
+
+    <span class="swipe-hint">SWIPE / CLICK</span>
+    <nav class="controls" aria-label="카드 이동">
+      <button class="nav-btn" id="prev" type="button" aria-label="이전 카드">‹</button>
+      <div class="progress"><span class="counter" id="counter" aria-live="polite">01 / 09</span><div class="dots" id="dots"></div></div>
+      <button class="nav-btn" id="next" type="button" aria-label="다음 카드">›</button>
+    </nav>
+  </main>
+
+  <script>
+    const track=document.querySelector('#track');
+    const slides=[...document.querySelectorAll('.slide')];
+    const dots=document.querySelector('#dots');
+    const counter=document.querySelector('#counter');
+    let index=0,startX=0,deltaX=0,dragging=false;
+
+    slides.forEach((_,i)=>{
+      const dot=document.createElement('button');
+      dot.type='button';
+      dot.className='dot';
+      dot.setAttribute('aria-label',`${i+1}번 카드로 이동`);
+      dot.addEventListener('click',()=>go(i));
+      dots.append(dot);
+    });
+
+    function go(next){
+      index=(next+slides.length)%slides.length;
+      track.style.transform=`translateX(${-index*100}%)`;
+      slides.forEach((slide,i)=>slide.setAttribute('aria-hidden',i!==index));
+      [...dots.children].forEach((dot,i)=>dot.classList.toggle('active',i===index));
+      counter.textContent=`${String(index+1).padStart(2,'0')} / ${String(slides.length).padStart(2,'0')}`;
+      slides[index].scrollTop=0;
+    }
+
+    document.querySelector('#prev').addEventListener('click',()=>go(index-1));
+    document.querySelector('#next').addEventListener('click',()=>go(index+1));
+    document.addEventListener('keydown',e=>{
+      if(e.key==='ArrowLeft')go(index-1);
+      if(e.key==='ArrowRight')go(index+1);
+    });
+    track.addEventListener('pointerdown',e=>{dragging=true;startX=e.clientX;deltaX=0;track.setPointerCapture(e.pointerId)});
+    track.addEventListener('pointermove',e=>{if(dragging)deltaX=e.clientX-startX});
+    track.addEventListener('pointerup',()=>{if(Math.abs(deltaX)>45)go(index+(deltaX<0?1:-1));dragging=false});
+    track.addEventListener('pointercancel',()=>dragging=false);
+    go(0);
+  </script>
+</body>
+</html>
