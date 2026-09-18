@@ -87,40 +87,29 @@
     }
     .cover-head h1{font-size:34px;line-height:.95;letter-spacing:-.08em}
     .cover-head small{font-size:10px;font-weight:800;letter-spacing:.15em;text-align:right}
-    .cover-grid{
-      display:grid;
-      grid-template-columns:54px minmax(0,1fr) 38px;
-      grid-template-rows:205px 245px;
-      gap:12px 0;
-      padding-top:12px;
-    }
-    .vertical-title{
-      grid-row:1/3;
-      display:flex;
-      align-items:center;
-      justify-content:center;
+    .cover-single{position:relative;width:100%;height:462px;overflow:hidden;background:#d9e7e8}
+    .cover-single .cover-photo{width:100%;height:100%;object-fit:cover;object-position:center top;display:block}
+    .cover-single .vertical-title{
+      position:absolute;top:18px;left:18px;
+      display:block;
       writing-mode:vertical-rl;
       text-orientation:mixed;
       font:900 clamp(38px,12vw,58px)/.84 Arial,sans-serif;
       letter-spacing:-.08em;
       transform:rotate(180deg);
-      -webkit-text-stroke:1px #fff;
+      color:#fff;
+      -webkit-text-stroke:1px #171717;
       z-index:2;
     }
-    .cover-photo{width:100%;height:100%;object-fit:cover;display:block;background:#d9e7e8}
-    .town-cover{grid-column:2/4;grid-row:1}
-    .school-cover{grid-column:1/3;grid-row:2}
-    .side-note{
-      grid-column:3;
-      grid-row:2;
-      display:flex;
-      align-items:flex-end;
-      justify-content:center;
-      padding-bottom:10px;
+    .cover-single .side-note{
+      position:absolute;top:22px;right:18px;
       writing-mode:vertical-rl;
       font-size:13px;
       font-weight:800;
       letter-spacing:.12em;
+      color:#fff;
+      text-shadow:0 1px 6px #0006;
+      z-index:2;
     }
     .cover-foot{
       height:55px;
@@ -147,13 +136,23 @@
     .school-strip img{width:110px;height:78px;object-fit:cover;background:#ddd}
     .school-strip b{display:block;margin:1px 0 5px;font-size:14px}
     .school-strip p{font-size:12px;line-height:1.55;color:#666}
+    .map-wrap{margin-top:18px;padding-top:14px;border-top:1px solid var(--line)}
+    .map-wrap .eyebrow{color:var(--blue);margin-bottom:8px;display:block}
+    .map-svg{width:100%;height:auto;display:block;background:#fff;border:1px solid var(--line)}
+    .map-legend{display:flex;flex-wrap:wrap;gap:8px 14px;margin-top:8px;font-size:10px;color:var(--muted)}
+    .map-legend span{display:inline-flex;align-items:center;gap:4px}
+    .map-legend i{width:7px;height:7px;border-radius:50%;background:var(--blue);flex:none}
+    .season-list{display:grid;gap:2px;margin-top:14px}
+    .season-item{display:grid;grid-template-columns:44px 1fr;gap:10px;align-items:baseline;padding:9px 0;border-bottom:1px solid var(--line)}
+    .season-item b{color:var(--blue);font-size:13px;font-weight:900}
+    .season-item span{font-size:12px;color:#555}
 
     /* characters */
     .character{--accent:#0aa1b8}
     .char-visual{position:relative;height:278px;margin-bottom:18px}
     .portrait{
       position:absolute;inset:0 28% 0 0;
-      width:72%;height:100%;object-fit:cover;object-position:center top;
+      width:72%;height:100%;object-fit:contain;object-position:center top;
       background:#dfe5e4;
       filter:saturate(.9);
     }
@@ -196,10 +195,10 @@
     .persona-grid p{font-size:12px;line-height:1.6;color:#555}
     .secret{margin-top:11px;padding:11px 13px;background:var(--ink);color:#fff;font-size:12px;line-height:1.55}
 
-    .commands{display:grid;gap:9px;margin-top:18px}
-    .command{display:grid;grid-template-columns:92px 1fr;gap:12px;align-items:center;padding:13px;background:#fff;border:1px solid var(--line)}
-    .command code{color:var(--blue);font:900 14px/1.2 monospace}
-    .command p{font-size:12px;line-height:1.5;color:#555}
+    .commands{display:grid;gap:6px;margin-top:14px}
+    .command{display:grid;grid-template-columns:78px 1fr;gap:10px;align-items:center;padding:9px 11px;background:#fff;border:1px solid var(--line)}
+    .command code{color:var(--blue);font:900 12px/1.2 monospace}
+    .command p{font-size:11px;line-height:1.45;color:#555}
     .closing{margin-top:18px;padding:18px;border-top:6px solid var(--blue);background:#eaf8fa}
     .closing p{font-family:Georgia,"Batang",serif;font-size:14px;line-height:1.7}
     .closing b{display:block;margin-top:8px;font-size:16px}
@@ -207,7 +206,7 @@
     /* controls */
     .controls{
       position:absolute;left:0;right:0;bottom:0;z-index:20;
-      height:58px;
+      height:64px;
       display:grid;
       grid-template-columns:58px 1fr 58px;
       align-items:center;
@@ -216,7 +215,7 @@
     }
     .nav-btn{height:100%;border:0;background:#fff;color:var(--ink);font-size:25px;cursor:pointer;touch-action:manipulation}
     .nav-btn:active{background:var(--blue);color:#fff}
-    .progress{display:flex;align-items:center;justify-content:center;gap:11px}
+    .progress{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px}
     .counter{min-width:44px;font:800 11px/1 Arial,sans-serif;letter-spacing:.08em;text-align:center}
     .dots{display:flex;gap:5px;align-items:center}
     .dot{width:6px;height:6px;padding:0;border:0;border-radius:50%;background:#c7c7c2;cursor:pointer}
@@ -230,7 +229,7 @@
     }
     @media(max-height:590px){
       .slide{padding-top:16px}
-      .cover-grid{grid-template-rows:175px 205px}
+      .cover-single{height:380px}
       .cover-head{height:88px}
       .cover-head h1{font-size:29px}
       .place-hero{height:190px}
@@ -248,31 +247,77 @@
           <h1>유루리<br>유라유라</h1>
           <small>HAYASE · 2000s<br>STORY GUIDE</small>
         </header>
-        <div class="cover-grid">
+        <div class="cover-single">
+          <img class="cover-photo" src="PASTE_5인_벤치_커버_이미지_URL" alt="하야세카이간역 방파제 벤치에 모인 다섯 소꿉친구">
           <div class="vertical-title">HAYASE</div>
-          <img class="cover-photo town-cover" src="https://i.imgur.com/Fj5WdZV.jpeg" alt="바다와 상점가가 보이는 하야세마치 전경">
-          <img class="cover-photo school-cover" src="https://i.imgur.com/huHYEa9.jpeg" alt="언덕 위에 자리한 하야세고등학교 전경">
           <div class="side-note">GUIDE BOOK · 2000s</div>
         </div>
         <footer class="cover-foot"><span>소꿉친구 재회</span><i></i><span>해안 소도시</span><i></i><span>고교 청춘 시뮬레이션</span></footer>
       </article>
 
-      <article class="slide" aria-label="하야세마치와 하야세고교">
-        <header class="chapter"><span>CHAPTER 01</span><span>PLACE &amp; SCHOOL</span></header>
+      <article class="slide" aria-label="하야세마치 소개">
+        <header class="chapter"><span>CHAPTER 01</span><span>PLACE</span></header>
         <div class="place-hero"><img src="https://i.imgur.com/Fj5WdZV.jpeg" alt="하야세마치 풍경"></div>
         <div class="place-title">
           <div><p class="eyebrow">다시 돌아온 바닷마을</p><h2>하야세마치</h2></div>
           <div class="mark">10 YEARS<br>AFTER</div>
         </div>
         <p class="place-copy">도쿄에서 전철로 한 시간 남짓. 바다와 밭, 오래된 상점가가 맞닿은 작은 해안도시. 당신은 이곳을 떠난 지 약 10년 만에 고등학교 2학년 전학생이 되어 돌아옵니다.</p>
-        <div class="school-strip">
-          <img src="https://i.imgur.com/huHYEa9.jpeg" alt="하야세고등학교">
-          <div><b>가나가와 현립 하야세고등학교</b><p>2000년대 중후반 · 고2 새 학기<br>첫 장면은 학교로 향하는 언덕길</p></div>
+
+        <div class="map-wrap">
+          <span class="eyebrow">하야세마치 약도</span>
+          <svg class="map-svg" viewBox="0 0 400 260" role="img" aria-label="하야세마치 약도: 역에서 상가거리 축과 국도변 축이 나뉘어 각각 학교와 포구로 이어지고, 두 축은 종합병원에서 다시 만난다">
+            <line x1="70" y1="130" x2="210" y2="55" stroke="#171717" stroke-width="2"/>
+            <line x1="70" y1="130" x2="210" y2="205" stroke="#171717" stroke-width="2"/>
+            <line x1="210" y1="55" x2="330" y2="130" stroke="#171717" stroke-width="2" stroke-dasharray="4 4"/>
+            <line x1="210" y1="205" x2="330" y2="130" stroke="#171717" stroke-width="2" stroke-dasharray="4 4"/>
+
+            <circle cx="70" cy="130" r="7" fill="#171717"/>
+            <text x="70" y="112" font-size="12" font-weight="800" text-anchor="middle">하야세카이간역</text>
+
+            <circle cx="210" cy="55" r="9" fill="#00a9c3"/>
+            <text x="210" y="35" font-size="13" font-weight="900" text-anchor="middle" fill="#00a9c3">하야세고교</text>
+            <text x="210" y="72" font-size="10" text-anchor="middle" fill="#777">상가거리 축 · 언덕 위</text>
+
+            <circle cx="210" cy="205" r="7" fill="#171717"/>
+            <text x="210" y="223" font-size="12" font-weight="800" text-anchor="middle">하야세 포구</text>
+            <text x="210" y="192" font-size="10" text-anchor="middle" fill="#777">국도변 축 · 방파제</text>
+
+            <circle cx="330" cy="130" r="7" fill="#171717"/>
+            <text x="330" y="112" font-size="12" font-weight="800" text-anchor="middle">종합병원</text>
+            <text x="330" y="148" font-size="10" text-anchor="middle" fill="#777">두 축이 만나는 곳</text>
+          </svg>
+          <div class="map-legend">
+            <span><i style="background:#00a9c3"></i>주요 무대</span>
+            <span><i style="background:#171717"></i>주요 거점</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="slide" aria-label="하야세고등학교 소개">
+        <header class="chapter"><span>CHAPTER 02</span><span>SCHOOL</span></header>
+        <div class="place-hero"><img src="https://i.imgur.com/huHYEa9.jpeg" alt="언덕 위에 자리한 하야세고등학교 전경"></div>
+        <div class="place-title">
+          <div><p class="eyebrow">언덕 위, 바다가 보이는</p><h2>하야세고등학교</h2></div>
+          <div class="mark">2000s<br>PUBLIC HS</div>
+        </div>
+        <p class="place-copy">가나가와 현립 하야세고등학교. 2000년대 중후반, 고2 새 학기 첫날. 이야기는 이 학교로 향하는 언덕길, 아직 아무도 마주치지 않은 등굣길에서 시작됩니다.</p>
+
+        <div class="map-wrap">
+          <span class="eyebrow">학사 일정</span>
+          <div class="season-list">
+            <div class="season-item"><b>4월</b><span>전학 · 새 학기 시작</span></div>
+            <div class="season-item"><b>6월</b><span>체육제</span></div>
+            <div class="season-item"><b>7월</b><span>1차 진로상담 · 여름방학</span></div>
+            <div class="season-item"><b>9월</b><span>문화제</span></div>
+            <div class="season-item"><b>12월</b><span>2차 진로상담 · 겨울방학</span></div>
+            <div class="season-item"><b>3월</b><span>졸업식</span></div>
+          </div>
         </div>
       </article>
 
       <article class="slide character" style="--accent:#c78b35" aria-label="타케나카 다이키 소개">
-        <header class="chapter"><span>CHAPTER 02 · 01</span><span>CHARACTER</span></header>
+        <header class="chapter"><span>CHAPTER 03 · 01</span><span>CHARACTER</span></header>
         <div class="char-visual">
           <img class="portrait" src="https://i.imgur.com/Xm5YqV8.jpeg" alt="타케나카 다이키">
           <img class="child" src="https://i.imgur.com/rTR8ln0.jpeg" alt="어린 시절의 다이키">
@@ -286,7 +331,7 @@
       </article>
 
       <article class="slide character" style="--accent:#4893a5" aria-label="마카베 아야토 소개">
-        <header class="chapter"><span>CHAPTER 02 · 02</span><span>CHARACTER</span></header>
+        <header class="chapter"><span>CHAPTER 03 · 02</span><span>CHARACTER</span></header>
         <div class="char-visual">
           <img class="portrait" src="https://i.imgur.com/A3fhuhj.jpeg" alt="마카베 아야토">
           <img class="child" src="https://i.imgur.com/LHXVVv8.jpeg" alt="어린 시절의 아야토">
@@ -300,7 +345,7 @@
       </article>
 
       <article class="slide character" style="--accent:#00a9c3" aria-label="니시우라 슌 소개">
-        <header class="chapter"><span>CHAPTER 02 · 03</span><span>CHARACTER</span></header>
+        <header class="chapter"><span>CHAPTER 03 · 03</span><span>CHARACTER</span></header>
         <div class="char-visual">
           <img class="portrait" src="https://i.imgur.com/e1WkCr3.jpeg" alt="니시우라 슌">
           <img class="child" src="https://i.imgur.com/v6lr2oe.jpeg" alt="어린 시절의 슌">
@@ -314,7 +359,7 @@
       </article>
 
       <article class="slide character" style="--accent:#d76554" aria-label="아와지마 마코토 소개">
-        <header class="chapter"><span>CHAPTER 02 · 04</span><span>CHARACTER</span></header>
+        <header class="chapter"><span>CHAPTER 03 · 04</span><span>CHARACTER</span></header>
         <div class="char-visual">
           <img class="portrait" src="https://i.imgur.com/FdZbaWs.jpeg" alt="아와지마 마코토">
           <img class="child" src="https://i.imgur.com/QnjOPfV.jpeg" alt="어린 시절의 마코토">
@@ -328,7 +373,7 @@
       </article>
 
       <article class="slide character" style="--accent:#69618e" aria-label="카미야 쿄타 소개">
-        <header class="chapter"><span>CHAPTER 02 · 05</span><span>CHARACTER</span></header>
+        <header class="chapter"><span>CHAPTER 03 · 05</span><span>CHARACTER</span></header>
         <div class="char-visual">
           <img class="portrait" src="https://i.imgur.com/MOH7gQB.jpeg" alt="카미야 쿄타">
           <img class="child" src="https://i.imgur.com/2hXxytC.jpeg" alt="어린 시절의 쿄타">
@@ -342,7 +387,7 @@
       </article>
 
       <article class="slide" aria-label="유저 페르소나 작성 도움">
-        <header class="chapter"><span>CHAPTER 03 · 01</span><span>YOUR PERSONA</span></header>
+        <header class="chapter"><span>CHAPTER 04 · 01</span><span>YOUR PERSONA</span></header>
         <div class="you-mark"><strong>YOU</strong><span>돌아온 여섯 번째 친구</span></div>
         <h2>그리고,<br>하야세마치로 돌아온 당신</h2>
         <p class="intro">다섯 친구와 함께 자라다 도쿄로 떠난 뒤, 약 10년 만에 돌아왔습니다. 그동안 어떤 사람이 되었는지와 귀향한 이유는 직접 정할 수 있습니다.</p>
@@ -354,17 +399,16 @@
       </article>
 
       <article class="slide" aria-label="명령어와 시작 안내">
-        <header class="chapter"><span>CHAPTER 03 · 02</span><span>PLAY GUIDE</span></header>
+        <header class="chapter"><span>CHAPTER 04 · 02</span><span>PLAY GUIDE</span></header>
         <p class="eyebrow">당신의 속도로 가까워지는 이야기</p>
         <h2 style="margin-top:6px">대화 중 사용할 수 있는<br>간단한 명령어</h2>
         <div class="commands">
-          <div class="command"><code>!일기</code><p>현재 대화 상대가 말하지 못한 마음을 확인합니다.</p></div>
+          <div class="command"><code>!일기 [이름]</code><p>등장한 인물의 일기를 확인합니다. 이름을 안 쓰면 지금 상대 기준.</p></div>
           <div class="command"><code>!속마음</code><p>지금 이 순간 상대가 떠올린 짧은 생각을 봅니다.</p></div>
-          <div class="command"><code>!일기 이름</code><p>이미 등장한 특정 인물의 일기를 확인합니다.</p></div>
         </div>
         <div class="persona-grid">
           <section><h3>RELATIONSHIP</h3><p>우정과 로맨스 중 어느 쪽도 정답으로 정해져 있지 않습니다.</p></section>
-          <section><h3>SEASON</h3><p>시험과 축제, 문화제 사이로 관계와 진로가 달라집니다.</p></section>
+          <section><h3>PACE</h3><p>느긋하게 머물러도, 빠르게 진행해도 이야기는 자연스럽게 따라옵니다.</p></section>
         </div>
         <div class="closing"><p>바다 냄새가 섞인 바람이 언덕을 타고 불어옵니다. 아직 누구와도 마주치지 않은 전학 첫날의 아침.</p><b>자, 어떻게 할까요?</b></div>
       </article>
@@ -373,7 +417,7 @@
     <span class="swipe-hint">SWIPE / CLICK</span>
     <nav class="controls" aria-label="카드 이동">
       <button class="nav-btn" id="prev" type="button" aria-label="이전 카드">‹</button>
-      <div class="progress"><span class="counter" id="counter" aria-live="polite">01 / 09</span><div class="dots" id="dots"></div></div>
+      <div class="progress"><span class="counter" id="counter" aria-live="polite">01 / 10</span><div class="dots" id="dots"></div></div>
       <button class="nav-btn" id="next" type="button" aria-label="다음 카드">›</button>
     </nav>
   </main>
@@ -401,6 +445,7 @@
       [...dots.children].forEach((dot,i)=>dot.classList.toggle('active',i===index));
       counter.textContent=`${String(index+1).padStart(2,'0')} / ${String(slides.length).padStart(2,'0')}`;
       slides[index].scrollTop=0;
+      document.querySelector('.swipe-hint').style.display = index===0 ? '' : 'none';
     }
 
     document.querySelector('#prev').addEventListener('click',()=>go(index-1));
