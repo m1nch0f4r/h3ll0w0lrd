@@ -51,7 +51,7 @@
       height:100%;
       padding:24px 24px 70px;
       overflow-y:auto;
-      overscroll-behavior:contain;
+      overscroll-behavior-y:auto;
       scrollbar-width:none;
       background:var(--paper);
     }
@@ -268,7 +268,6 @@
     .dots{display:flex;gap:5px;align-items:center}
     .dot{width:6px;height:6px;padding:0;border:0;border-radius:50%;background:#c7c7c2;cursor:pointer}
     .dot.active{width:18px;border-radius:6px;background:var(--blue)}
-    .swipe-hint{position:absolute;right:17px;top:12px;z-index:4;padding:5px 7px;background:#fff;color:#555;font-size:9px;font-weight:800;letter-spacing:.08em}
     button:focus-visible{outline:3px solid var(--blue);outline-offset:-3px}
 
     @media(min-width:700px){
@@ -476,7 +475,6 @@
       </article>
     </div>
 
-    <span class="swipe-hint">SWIPE / CLICK</span>
     <nav class="controls" aria-label="카드 이동">
       <button class="nav-btn" id="prev" type="button" aria-label="이전 카드">‹</button>
       <div class="progress"><span class="counter" id="counter" aria-live="polite">01 / 10</span><div class="dots" id="dots"></div></div>
@@ -489,7 +487,7 @@
     const slides=[...document.querySelectorAll('.slide')];
     const dots=document.querySelector('#dots');
     const counter=document.querySelector('#counter');
-    let index=0,startX=0,deltaX=0,dragging=false;
+    let index=0;
 
     slides.forEach((_,i)=>{
       const dot=document.createElement('button');
@@ -507,7 +505,6 @@
       [...dots.children].forEach((dot,i)=>dot.classList.toggle('active',i===index));
       counter.textContent=`${String(index+1).padStart(2,'0')} / ${String(slides.length).padStart(2,'0')}`;
       slides[index].scrollTop=0;
-      document.querySelector('.swipe-hint').style.display = index===0 ? '' : 'none';
     }
 
     document.querySelector('#prev').addEventListener('click',()=>go(index-1));
@@ -516,10 +513,6 @@
       if(e.key==='ArrowLeft')go(index-1);
       if(e.key==='ArrowRight')go(index+1);
     });
-    track.addEventListener('pointerdown',e=>{dragging=true;startX=e.clientX;deltaX=0;track.setPointerCapture(e.pointerId)});
-    track.addEventListener('pointermove',e=>{if(dragging)deltaX=e.clientX-startX});
-    track.addEventListener('pointerup',()=>{if(Math.abs(deltaX)>45)go(index+(deltaX<0?1:-1));dragging=false});
-    track.addEventListener('pointercancel',()=>dragging=false);
     go(0);
   </script>
 </body>
