@@ -9,7 +9,7 @@
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230c9fb6'/%3E%3Cpath d='M8 39c10-9 19-9 28 0 8 7 14 7 20 0v9c-8 7-16 7-24 0-8-7-16-7-24 0z' fill='white'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@600;700&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;600;700&amp;display=swap" rel="stylesheet">
   <style>
     :root{
       --ink:#171717;
@@ -72,6 +72,7 @@
       letter-spacing:.12em;
     }
     .chapter span:last-child{color:var(--muted);font-weight:500}
+    .chapter span.jp{font:italic 300 12px/1.3 "Noto Sans JP","Yu Gothic","Hiragino Kaku Gothic ProN",serif;letter-spacing:.02em;color:var(--muted);text-align:right}
     .eyebrow{font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
     h1,h2,h3,p{margin:0}
     h2{font-size:29px;line-height:1.15;letter-spacing:-.055em}
@@ -115,7 +116,6 @@
     .cover-single .side-note{
       position:absolute;right:18px;bottom:22px;
       writing-mode:vertical-rl;
-      transform:rotate(180deg);
       font-size:13px;
       font-weight:800;
       letter-spacing:.12em;
@@ -142,9 +142,7 @@
     .place-hero img{width:100%;height:100%;object-fit:cover;display:block}
     .place-hero:after{content:attr(data-title);position:absolute;right:14px;bottom:6px;color:#fff;font:900 clamp(28px,8.5vw,44px)/1 Arial,sans-serif;letter-spacing:-.06em;text-shadow:0 2px 12px #0005}
     .place-hero.school-hero:after{font-size:clamp(20px,6vw,31px);white-space:nowrap}
-    .school-kicker{position:absolute;top:14px;left:14px;color:#fff;font:800 clamp(10px,2.8vw,13px)/1.2 Arial,sans-serif;letter-spacing:.08em;text-shadow:0 1px 5px #000b}
-    .place-title{display:grid;grid-template-columns:1fr 88px;gap:14px;align-items:start}
-    .place-title .mark{border-top:5px solid var(--blue);padding-top:8px;color:var(--blue);font:900 13px/1.2 Arial,sans-serif;letter-spacing:.12em}
+    .place-title{display:block}
     .place-copy{margin-top:14px;color:#444}
     .school-strip{display:grid;grid-template-columns:110px 1fr;gap:14px;margin-top:18px;padding-top:14px;border-top:1px solid var(--line)}
     .school-strip img{width:110px;height:78px;object-fit:cover;background:#ddd}
@@ -317,13 +315,12 @@
       </article>
 
       <article class="slide" aria-label="하야세마치 소개">
-        <header class="chapter"><span>CHAPTER 01</span><span>PLACE</span></header>
+        <header class="chapter"><span>CHAPTER 01</span><span class="jp" lang="ja">10年後の早瀬町</span></header>
         <div class="place-hero" data-title="HAYASE CITY"><img src="https://i.imgur.com/Fj5WdZV.jpeg" alt="하야세마치 풍경"></div>
         <div class="place-title">
-          <div><p class="eyebrow">다시 돌아온 바닷마을</p><h2>하야세마치</h2></div>
-          <div class="mark">10 YEARS<br>AFTER</div>
+          <p class="eyebrow">다시 돌아온 바닷마을</p><h2>하야세마치</h2>
         </div>
-        <p class="place-copy">도쿄에서 전철로 한 시간 남짓. 바다와 밭, 오래된 상점가가 맞닿은 작은 해안도시. 당신은 이곳을 떠난 지 약 10년 만에 고등학교 2학년 전학생이 되어 돌아옵니다.</p>
+        <p class="place-copy">도쿄에서 전철로 한 시간 남짓. 바다와 밭, 오래된 상점가가 맞닿은 작은 해안도시. 이곳을 떠난 지 약 10년. 당신은 고등학교 2학년 전학생이 되어 돌아옵니다.</p>
 
         <div class="map-wrap">
           <span class="eyebrow">하야세마치 약도</span>
@@ -356,11 +353,10 @@
       </article>
 
       <article class="slide" aria-label="하야세고등학교 소개">
-        <header class="chapter"><span>CHAPTER 02</span><span>SCHOOL</span></header>
-        <div class="place-hero school-hero" data-title="HAYASE HIGH SCHOOL"><img src="https://i.imgur.com/huHYEa9.jpeg" alt="언덕 위에 자리한 하야세고등학교 전경"><span class="school-kicker">KANAGAWA PREFECTURAL</span></div>
+        <header class="chapter"><span>CHAPTER 02</span><span class="jp" lang="ja">神奈川県立 早瀬高等学校</span></header>
+        <div class="place-hero school-hero" data-title="HAYASE HIGH SCHOOL"><img src="https://i.imgur.com/huHYEa9.jpeg" alt="언덕 위에 자리한 하야세고등학교 전경"></div>
         <div class="place-title">
-          <div><p class="eyebrow">언덕 위, 바다가 보이는</p><h2>하야세고등학교</h2></div>
-          <div class="mark">2000s<br>PUBLIC HS</div>
+          <p class="eyebrow">언덕 위, 바다가 보이는</p><h2>하야세고등학교</h2>
         </div>
         <p class="place-copy">가나가와 현립 하야세고등학교. 2000년대 중후반, 고2 새 학기 첫날. 이야기는 이 학교로 향하는 언덕길, 아직 아무도 마주치지 않은 등굣길에서 시작됩니다.</p>
 
@@ -378,7 +374,7 @@
       </article>
 
       <article class="slide character" style="--accent:#c78b35" aria-label="타케나카 다이키 소개">
-        <header class="chapter"><span>CHAPTER 03 · 01</span><span>CHARACTER</span></header>
+        <header class="chapter"><span>CHAPTER 03 · 01</span><span class="jp" lang="ja">幼馴染たち</span></header>
         <div class="char-visual">
           <img class="portrait" src="https://i.imgur.com/Xm5YqV8.jpeg" alt="타케나카 다이키">
           <div class="profile-wrap"><span class="tape"></span><img class="profile-pic" src="https://i.imgur.com/wMz7NNm.jpeg" alt="다이키 챗봇 프로필용 이미지"></div>
@@ -394,7 +390,7 @@
       </article>
 
       <article class="slide character" style="--accent:#4893a5" aria-label="마카베 아야토 소개">
-        <header class="chapter"><span>CHAPTER 03 · 02</span><span>CHARACTER</span></header>
+        <header class="chapter"><span>CHAPTER 03 · 02</span><span class="jp" lang="ja">幼馴染たち</span></header>
         <div class="char-visual">
           <img class="portrait" src="https://i.imgur.com/A3fhuhj.jpeg" alt="마카베 아야토">
           <div class="profile-wrap"><span class="tape"></span><img class="profile-pic" src="https://i.imgur.com/Shmj3N9.jpeg" alt="아야토 챗봇 프로필용 이미지"></div>
@@ -410,7 +406,7 @@
       </article>
 
       <article class="slide character" style="--accent:#00a9c3" aria-label="니시우라 슌 소개">
-        <header class="chapter"><span>CHAPTER 03 · 03</span><span>CHARACTER</span></header>
+        <header class="chapter"><span>CHAPTER 03 · 03</span><span class="jp" lang="ja">幼馴染たち</span></header>
         <div class="char-visual">
           <img class="portrait" src="https://i.imgur.com/e1WkCr3.jpeg" alt="니시우라 슌">
           <div class="profile-wrap"><span class="tape"></span><img class="profile-pic" src="https://i.imgur.com/QtCnQgc.jpeg" alt="슌 챗봇 프로필용 이미지"></div>
@@ -426,7 +422,7 @@
       </article>
 
       <article class="slide character" style="--accent:#d76554" aria-label="아와지마 마코토 소개">
-        <header class="chapter"><span>CHAPTER 03 · 04</span><span>CHARACTER</span></header>
+        <header class="chapter"><span>CHAPTER 03 · 04</span><span class="jp" lang="ja">幼馴染たち</span></header>
         <div class="char-visual">
           <img class="portrait" src="https://i.imgur.com/93SGCNI.jpeg" alt="아와지마 마코토">
           <div class="profile-wrap"><span class="tape"></span><img class="profile-pic" src="https://i.imgur.com/xyKQ8Lb.jpeg" alt="마코토 챗봇 프로필용 이미지"></div>
@@ -442,7 +438,7 @@
       </article>
 
       <article class="slide character" style="--accent:#69618e" aria-label="카미야 쿄타 소개">
-        <header class="chapter"><span>CHAPTER 03 · 05</span><span>CHARACTER</span></header>
+        <header class="chapter"><span>CHAPTER 03 · 05</span><span class="jp" lang="ja">幼馴染たち</span></header>
         <div class="char-visual">
           <img class="portrait" src="https://i.imgur.com/MOH7gQB.jpeg" alt="카미야 쿄타">
           <div class="profile-wrap"><span class="tape"></span><img class="profile-pic" src="https://i.imgur.com/VpWqJYf.jpeg" alt="쿄타 챗봇 프로필용 이미지"></div>
@@ -458,10 +454,10 @@
       </article>
 
       <article class="slide" aria-label="유저 페르소나 작성 도움">
-        <header class="chapter"><span>CHAPTER 04 · 01</span><span>YOUR PERSONA</span></header>
+        <header class="chapter"><span>CHAPTER 04 · 01</span><span class="jp" lang="ja">君は誰？</span></header>
         <div class="you-mark"><strong>YOU</strong><span>돌아온 여섯 번째 친구</span></div>
         <h2>그리고,<br>하야세마치로 돌아온 당신</h2>
-        <p class="intro">다섯 친구와 함께 자라다 도쿄로 떠난 뒤, 약 10년 만에 돌아왔습니다. 그동안 어떤 사람이 되었는지와 귀향한 이유는 직접 정할 수 있습니다.</p>
+        <p class="intro">다섯 친구와 함께 자라다가 도쿄로 떠난 뒤, 약 10년 만에 돌아왔습니다. 그동안 어떤 사람이 되었는지, 왜 돌아왔는지는 직접 정할 수 있습니다.</p>
         <div class="persona-grid">
           <section><h3>FIXED · 고정 설정</h3><p>고등학교 2학년 전학생<br>다섯 명의 옛 소꿉친구<br>약 10년 만의 귀향</p></section>
           <section><h3>FREE · 자유 설정</h3><p>이름 · 성별과 젠더 · 외모<br>성격 · 귀향 이유 · 별명<br>말하지 않은 비밀</p></section>
@@ -470,12 +466,13 @@
       </article>
 
       <article class="slide" aria-label="명령어와 시작 안내">
-        <header class="chapter"><span>CHAPTER 04 · 02</span><span>PLAY GUIDE</span></header>
+        <header class="chapter"><span>CHAPTER 04 · 02</span><span class="jp" lang="ja">遊び方</span></header>
         <p class="eyebrow">당신의 속도로 가까워지는 이야기</p>
         <h2 style="margin-top:6px">대화 중 사용할 수 있는<br>간단한 명령어</h2>
         <div class="commands">
           <div class="command"><code>!일기 [이름]</code><p>등장한 인물의 일기를 확인합니다. 이름을 안 쓰면 지금 상대 기준.</p></div>
           <div class="command"><code>!속마음</code><p>지금 이 순간 상대가 떠올린 짧은 생각을 봅니다.</p></div>
+          <div class="command"><code>!엔딩</code><p>졸업을 앞두고, 지금까지의 관계를 결말로 이어갑니다.</p></div>
         </div>
         <div class="map-legend" style="margin-top:10px">
           <span>상태창 아이콘 ·</span>
