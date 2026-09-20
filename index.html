@@ -235,14 +235,20 @@
     }
     .id-tag .jp{display:block;font-family:"Noto Sans JP","Yu Gothic","Hiragino Kaku Gothic ProN",sans-serif;font-size:13px;font-weight:600;line-height:1.45;color:#3a3620}
     .id-tag .en{display:block;font-size:9px;letter-spacing:.03em;color:#6b6640;margin-top:2px}
-    .char-head{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:end}
+    .char-head{display:block}
     .char-head h2{font-size:31px}
-    .nickname{color:var(--accent);font-size:11px;font-weight:800;letter-spacing:.06em;text-align:right}
     .role{margin-top:7px;color:var(--accent);font-size:14px;font-weight:800;line-height:1.45}
     .description{margin-top:10px;color:#505050;font-size:13px;line-height:1.63}
     .chips{display:flex;gap:6px;flex-wrap:wrap;margin-top:11px}
     .chips span{padding:5px 8px;border:1px solid var(--accent);color:var(--accent);font-size:10px;font-weight:750}
     .quote{margin-top:12px;padding:10px 12px;border-left:4px solid var(--accent);background:#fff;font-family:Georgia,"Batang",serif;font-size:13px;line-height:1.55}
+    .trivia{margin-top:12px;padding:11px 13px;border:1px solid var(--line);background:#fafaf8}
+    .trivia .t-label{display:block;margin-bottom:8px;color:var(--muted);font-size:10px;font-weight:800;letter-spacing:.14em}
+    .trivia dl{display:grid;grid-template-columns:64px 1fr;gap:5px 10px;margin:0}
+    .trivia dt{font-size:11px;color:var(--muted);font-weight:700}
+    .trivia dd{margin:0;font-size:11.5px;color:#444}
+    .trivia .nickname-title{margin-top:9px;padding-top:9px;border-top:1px dashed var(--line);font-size:13px;font-weight:800;color:var(--accent);letter-spacing:.02em}
+    .trivia p{margin-top:6px;font-size:11.5px;line-height:1.6;color:#444}
 
     /* chapter 3 */
     .you-mark{display:flex;align-items:flex-end;justify-content:space-between;height:112px;margin-bottom:17px;border-bottom:7px solid var(--blue)}
@@ -373,7 +379,7 @@
         </div>
       </article>
 
-      <article class="slide character" style="--accent:#c78b35" aria-label="타케나카 다이키 소개">
+      <article class="slide character" style="--accent:#6B5D4A" aria-label="타케나카 다이키 소개">
         <header class="chapter"><span>CHAPTER 03 · 01</span><span class="jp" lang="ja">幼馴染たち</span></header>
         <div class="char-visual">
           <img class="portrait" src="https://i.imgur.com/Xm5YqV8.jpeg" alt="타케나카 다이키">
@@ -382,14 +388,26 @@
           <div class="id-tag"><span class="jp" lang="ja">竹中大輝</span><span class="en">TAKENAKA DAIKI</span></div>
           <span class="sticker">🥋</span>
         </div>
-        <div class="char-head"><h2>타케나카 다이키</h2><span class="nickname">🥋 다이짱</span></div>
+        <div class="char-head"><h2>타케나카 다이키</h2></div>
         <p class="role">언제나 그 자리에 있는, 과묵한 유도부 에이스.</p>
         <p class="description">졸업 후에는 가족의 농사를 이을 생각입니다. 오래전 기억을 누구보다 선명하게 간직하고 있는 듯합니다.</p>
         <div class="chips"><span>#유도부</span><span>#남는사람</span><span>#과묵한소꿉친구</span></div>
         <p class="quote">“……많이 변했네. 그래도 알아보긴 했어.”</p>
+        <div class="trivia">
+          <span class="t-label">TRIVIA</span>
+          <dl>
+            <dt>신장</dt><dd>179cm</dd>
+            <dt>생일</dt><dd>4월 8일 · 양자리</dd>
+            <dt>좋아하는 과목</dt><dd>체육</dd>
+            <dt>싫어하는 과목</dt><dd>고전문학</dd>
+          </dl>
+          <p class="nickname-title">🥋 다이짱</p>
+          <p>10년 전엔 무리 중 최장신에, 유루캬라 굿즈를 티 내며 좋아하던 순박한 꼬맹이였다.</p>
+          <p class="origin">부모님이 붙여주신 별명. 동네 어른들이 따라 부르기 시작하면서 친구들 사이에서도 자연스레 굳어졌다.</p>
+        </div>
       </article>
 
-      <article class="slide character" style="--accent:#4893a5" aria-label="마카베 아야토 소개">
+      <article class="slide character" style="--accent:#8FA84F" aria-label="마카베 아야토 소개">
         <header class="chapter"><span>CHAPTER 03 · 02</span><span class="jp" lang="ja">幼馴染たち</span></header>
         <div class="char-visual">
           <img class="portrait" src="https://i.imgur.com/A3fhuhj.jpeg" alt="마카베 아야토">
@@ -398,14 +416,26 @@
           <div class="id-tag"><span class="jp" lang="ja">真壁彰斗</span><span class="en">MAKABE AYATO</span></div>
           <span class="sticker">🏥</span>
         </div>
-        <div class="char-head"><h2>마카베 아야토</h2><span class="nickname">🏥 아야보</span></div>
+        <div class="char-head"><h2>마카베 아야토</h2></div>
         <p class="role">반듯한 미소 뒤에서 답을 고르는, 궁도부의 모범생.</p>
         <p class="description">학생회와 궁도부를 오가는 우등생. 의료 집안의 후계자로서 의대를 준비하지만, 가끔 대답 전의 침묵이 길어집니다.</p>
         <div class="chips"><span>#존댓말도련님</span><span>#학생회</span><span>#정해진진로</span></div>
         <p class="quote">“혹시…… 제가 기억하는 그 아이가 맞습니까?”</p>
+        <div class="trivia">
+          <span class="t-label">TRIVIA</span>
+          <dl>
+            <dt>신장</dt><dd>177cm</dd>
+            <dt>생일</dt><dd>3월 3일 · 물고기자리</dd>
+            <dt>좋아하는 과목</dt><dd>생물</dd>
+            <dt>싫어하는 과목</dt><dd>가정(요리 실습)</dd>
+          </dl>
+          <p class="nickname-title">🏥 아야보</p>
+          <p>10년 전엔 무리 중 가장 체구가 작아, 늘 소꿉친구들에게 보호받던 ‘막내’ 자리였다.</p>
+          <p class="origin">동네 어른들이 ‘마카베 댁 도련님’이라 부르던 것에서 변형됨. 친구들이 “아야토는 봇짱(坊っちゃん)이지”라며 붙여준 이름.</p>
+        </div>
       </article>
 
-      <article class="slide character" style="--accent:#00a9c3" aria-label="니시우라 슌 소개">
+      <article class="slide character" style="--accent:#E24F93" aria-label="니시우라 슌 소개">
         <header class="chapter"><span>CHAPTER 03 · 03</span><span class="jp" lang="ja">幼馴染たち</span></header>
         <div class="char-visual">
           <img class="portrait" src="https://i.imgur.com/e1WkCr3.jpeg" alt="니시우라 슌">
@@ -414,14 +444,26 @@
           <div class="id-tag"><span class="jp" lang="ja">西浦俊</span><span class="en">NISHIURA SHUN</span></div>
           <span class="sticker">🪞</span>
         </div>
-        <div class="char-head"><h2>니시우라 슌</h2><span class="nickname">🪞 슌키치</span></div>
+        <div class="char-head"><h2>니시우라 슌</h2></div>
         <p class="role">도쿄를 꿈꾸는, 하야고 제일의 도시파.</p>
         <p class="description">촌스럽다는 말을 무엇보다 싫어합니다. 도쿄의 명문대 진학을 꿈꾸며 누구보다 바쁘게 달리는 중입니다.</p>
         <div class="chips"><span>#츤데레</span><span>#도쿄지망</span><span>#숨은노력파</span></div>
         <p class="quote">“그 이름으로 부르지 마! 대체 언제 적 별명이냐고!”</p>
+        <div class="trivia">
+          <span class="t-label">TRIVIA</span>
+          <dl>
+            <dt>신장</dt><dd>180cm</dd>
+            <dt>생일</dt><dd>6월 2일 · 쌍둥이자리</dd>
+            <dt>좋아하는 과목</dt><dd>영어</dd>
+            <dt>싫어하는 과목</dt><dd>체육(땀 나면 머리가 망가짐)</dd>
+          </dl>
+          <p class="nickname-title">🪞 슌키치</p>
+          <p>어릴 적엔 무리 중 키가 작고 장난기 많은 소란스러운 꼬맹이였지만, 지금은 가장 스타일리시하다.</p>
+          <p class="origin">누나가 ‘명랑 개구리 뿅키치’를 닮았다며 붙여준 별명.</p>
+        </div>
       </article>
 
-      <article class="slide character" style="--accent:#d76554" aria-label="아와지마 마코토 소개">
+      <article class="slide character" style="--accent:#224B8F" aria-label="아와지마 마코토 소개">
         <header class="chapter"><span>CHAPTER 03 · 04</span><span class="jp" lang="ja">幼馴染たち</span></header>
         <div class="char-visual">
           <img class="portrait" src="https://i.imgur.com/93SGCNI.jpeg" alt="아와지마 마코토">
@@ -430,14 +472,26 @@
           <div class="id-tag"><span class="jp" lang="ja">泡島真琴</span><span class="en">AWAJIMA MAKOTO</span></div>
           <span class="sticker">🎭</span>
         </div>
-        <div class="char-head"><h2>아와지마 마코토</h2><span class="nickname">🎭 마코링</span></div>
+        <div class="char-head"><h2>아와지마 마코토</h2></div>
         <p class="role">모두의 바람막이를 자처하는, 연극부의 왕자님.</p>
         <p class="description">연극부의 간판 배우. 당차고 완벽해 보이지만, 정작 자신이 보살핌을 받는 상황에는 영 서툽니다.</p>
         <div class="chips"><span>#연극부로미오</span><span>#왕자님</span><span>#서툰보호자</span></div>
         <p class="quote">“걱정할 것 없어. 이번에는 내가 네 곁에 있을 테니까.”</p>
+        <div class="trivia">
+          <span class="t-label">TRIVIA</span>
+          <dl>
+            <dt>신장</dt><dd>170cm</dd>
+            <dt>생일</dt><dd>8월 3일 · 사자자리</dd>
+            <dt>좋아하는 과목</dt><dd>세계사</dd>
+            <dt>싫어하는 과목</dt><dd>물리</dd>
+          </dl>
+          <p class="nickname-title">🎭 마코링</p>
+          <p>아역 배우로 활동하던 시절엔 어른스러운 척했지만, 소꿉친구들 앞에서는 그저 당찬 꼬맹이였다.</p>
+          <p class="origin">아역 시절 촬영 현장 스태프들이 붙여준 애칭이 그대로 소꿉친구들 사이로 옮겨붙었다.</p>
+        </div>
       </article>
 
-      <article class="slide character" style="--accent:#69618e" aria-label="카미야 쿄타 소개">
+      <article class="slide character" style="--accent:#8f7ba3" aria-label="카미야 쿄타 소개">
         <header class="chapter"><span>CHAPTER 03 · 05</span><span class="jp" lang="ja">幼馴染たち</span></header>
         <div class="char-visual">
           <img class="portrait" src="https://i.imgur.com/MOH7gQB.jpeg" alt="카미야 쿄타">
@@ -446,11 +500,23 @@
           <div class="id-tag"><span class="jp" lang="ja">上屋享多</span><span class="en">KAMIYA KYOTA</span></div>
           <span class="sticker">🏪</span>
         </div>
-        <div class="char-head"><h2>카미야 쿄타</h2><span class="nickname">🏪 쿄군</span></div>
+        <div class="char-head"><h2>카미야 쿄타</h2></div>
         <p class="role">괜찮다는 말을 지나치게 자연스럽게 하는 아이.</p>
         <p class="description">조용하고 입이 무거운 소꿉친구. 방과 후에는 여러 아르바이트를 오가며, 자신의 사정은 좀처럼 꺼내지 않습니다.</p>
         <div class="chips"><span>#과묵한알바생</span><span>#밤의방파제</span><span>#혼자버티는사람</span></div>
         <p class="quote">“……나보다 네 얘기부터 해. 도쿄에서는 어떻게 지냈어?”</p>
+        <div class="trivia">
+          <span class="t-label">TRIVIA</span>
+          <dl>
+            <dt>신장</dt><dd>184cm</dd>
+            <dt>생일</dt><dd>7월 19일 · 게자리</dd>
+            <dt>좋아하는 과목</dt><dd>현대문학</dd>
+            <dt>싫어하는 과목</dt><dd>수학</dd>
+          </dl>
+          <p class="nickname-title">🏪 쿄군</p>
+          <p>또래보다 점잖지만 유쾌하고 활발한 소년이었다 — 마코토의 아역 시절 대본에 어려운 한자 읽는 법을 달아주곤 했다.</p>
+          <p class="origin">이름의 ‘쿄’에 흔한 호칭 접미사 ‘군(君)’을 더한 무난한 형태. 별스러운 유래는 없지만, 그래서인지 실제로 이렇게 부르는 사람은 몇 안 된다.</p>
+        </div>
       </article>
 
       <article class="slide" aria-label="유저 페르소나 작성 도움">
