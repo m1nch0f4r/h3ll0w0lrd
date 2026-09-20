@@ -155,8 +155,8 @@
     .map-legend span{display:inline-flex;align-items:center;gap:4px}
     .map-legend i{width:7px;height:7px;border-radius:50%;background:var(--blue);flex:none}
     .season-list{display:grid;gap:2px;margin-top:14px}
-    .season-item{display:grid;grid-template-columns:44px 1fr;gap:10px;align-items:baseline;padding:9px 0;border-bottom:1px solid var(--line)}
-    .season-item b{color:var(--blue);font-size:13px;font-weight:900}
+    .season-item{display:grid;grid-template-columns:58px 1fr;gap:10px;align-items:baseline;padding:9px 0;border-bottom:1px solid var(--line)}
+    .season-item b{color:var(--ink);font-size:13px;font-weight:900}
     .season-item span{font-size:12px;color:#555}
 
     /* characters */
@@ -249,6 +249,12 @@
     .trivia dd{margin:0;font-size:11.5px;color:#444}
     .trivia .nickname-title{margin-top:9px;padding-top:9px;border-top:1px dashed var(--line);font-size:13px;font-weight:800;color:var(--accent);letter-spacing:.02em}
     .trivia p{margin-top:6px;font-size:11.5px;line-height:1.6;color:#444}
+    .trivia p.t-title{margin-top:10px;padding-top:10px;border-top:1px dashed var(--line);font-size:12.5px;font-weight:800;color:var(--accent);letter-spacing:.02em}
+    .trivia p.t-body{margin-top:5px;font-size:11.5px;line-height:1.6;color:#444}
+    .trivia table{width:100%;border-collapse:collapse;margin-top:6px;font-size:11px}
+    .trivia table th,.trivia table td{padding:5px 6px;text-align:left;border-bottom:1px solid var(--line);line-height:1.4}
+    .trivia table th{color:var(--muted);font-weight:700;font-size:10px;white-space:nowrap}
+    .trivia table td{color:#444}
 
     /* chapter 3 */
     .you-mark{display:flex;align-items:flex-end;justify-content:space-between;height:112px;margin-bottom:17px;border-bottom:7px solid var(--blue)}
@@ -356,6 +362,15 @@
             <span><i style="background:#171717"></i>주요 거점</span>
           </div>
         </div>
+        <div class="trivia" style="--accent:#00a9c3">
+          <span class="t-label">TRIVIA</span>
+          <p class="t-title">장소</p>
+          <p class="t-body">하야세카이간역은 이 마을의 유일한 역이자, 도쿄를 비롯한 타지로 나가려면 반드시 거쳐야 하는 관문입니다. 역에서 상가거리를 따라 걸으면 언덕 위 하야세고교로 이어지고, 반대로 국도변 로드사이드를 지나면 하야세 포구와 방파제에 닿습니다. 그리고 이 두 길은 마을 안쪽, 종합병원 앞에서 다시 하나로 만납니다.</p>
+          <p class="t-title">비밀기지</p>
+          <p class="t-body">포구 근처, 낡은 보트창고. 다섯 명과 당신이 초등학생 시절 어른들 몰래 모이던 곳입니다. 낙서, 과자 껍질, 이름을 새긴 나무판이 아직 그대로 남아있을지도 모릅니다. 지금 다섯 명이 밤에 고민을 나누러 오는 방파제 자리가 바로 이 창고 근처입니다.</p>
+          <p class="t-title">2000년대, 불편한 연락</p>
+          <p class="t-body">스마트폰이 아직 대중화되지 않은 시절 — 연락은 피처폰 문자·이메일·집전화·직접 방문이 중심입니다. 답장을 오래 기다리는 일, 자연스럽게 끊기는 연락. 이 시절의 통신 환경이 재회의 이야기를 가능하게 합니다.</p>
+        </div>
       </article>
 
       <article class="slide" aria-label="하야세고등학교 소개">
@@ -376,6 +391,27 @@
             <div class="season-item"><b>12월</b><span>2차 진로상담 · 겨울방학</span></div>
             <div class="season-item"><b>3월</b><span>졸업식</span></div>
           </div>
+          <span class="eyebrow" style="margin-top:16px">계절 이벤트</span>
+          <div class="season-list">
+            <div class="season-item"><b>🌸 봄</b><span>골든위크(4/29~5/5)</span></div>
+            <div class="season-item"><b>🍉 여름</b><span>나츠마츠리 · 불꽃놀이</span></div>
+            <div class="season-item"><b>🍂 가을</b><span>수학여행(2학년 · 간사이 코스)</span></div>
+            <div class="season-item"><b>❄️ 겨울</b><span>발렌타인(2/14) · 화이트데이(3/14)</span></div>
+          </div>
+        </div>
+        <div class="trivia" style="--accent:#00a9c3;margin-top:22px">
+          <span class="t-label">TRIVIA</span>
+          <p class="t-title">좁은 학교, 빠른 소문</p>
+          <p class="t-body">학년당 6~7학급, 학급당 20~25명. 도쿄의 대형 학교와 학급 수 자체는 비슷하지만 한 반 인원이 훨씬 적어, 다른 반이어도 얼굴과 이름 정도는 서로 아는 경우가 많습니다. 몇 다리만 건너면 다 아는 사이가 되는 소도시 특유의 밀도를 학교 안에서도 그대로 느낄 수 있습니다.</p>
+          <p class="t-title">전통적 3학기제</p>
+          <p class="t-body">2000년대 가나가와 내 2학기제 확산은 주로 요코하마 등 시립 초중학교 중심이었고, 하야세마치 같은 소규모 지역의 현립 고교는 3학기제를 그대로 유지하고 있습니다.</p>
+          <p class="t-title">하야세마치 내 학교 목록</p>
+          <table>
+            <tr><th>유치원</th><td>하야세유치원 <span style="color:var(--muted)">— 다섯 명이 함께 다녔던 곳</span></td></tr>
+            <tr><th>초등학교</th><td>하야세 제1초등학교 <span style="color:var(--muted)">— 다섯 명과 당신이 전학 전 함께 다녔던 곳</span> · 제2초등학교</td></tr>
+            <tr><th>중학교</th><td>현립 하야세중학교 <span style="color:var(--muted)">— 관내 유일</span></td></tr>
+            <tr><th>고등학교</th><td>가나가와 현립 하야세고등학교 <span style="color:var(--muted)">— 관내 유일 전일제 남녀공학</span></td></tr>
+          </table>
         </div>
       </article>
 
@@ -402,8 +438,8 @@
             <dt>싫어하는 과목</dt><dd>고전문학</dd>
           </dl>
           <p class="nickname-title">🥋 다이짱</p>
-          <p>10년 전엔 무리 중 최장신에, 유루캬라 굿즈를 티 내며 좋아하던 순박한 꼬맹이였다.</p>
-          <p class="origin">부모님이 붙여주신 별명. 동네 어른들이 따라 부르기 시작하면서 친구들 사이에서도 자연스레 굳어졌다.</p>
+          <p>부모님이 붙여주신 별명. 동네 어른들이 따라 부르기 시작하면서 친구들 사이에서도 자연스레 굳어졌다.</p>
+          <p class="origin">10년 전엔 무리 중 최장신에, 유루캬라 굿즈를 티 내며 좋아하던 순박한 꼬맹이였다.</p>
         </div>
       </article>
 
@@ -430,8 +466,8 @@
             <dt>싫어하는 과목</dt><dd>가정(요리 실습)</dd>
           </dl>
           <p class="nickname-title">🏥 아야보</p>
-          <p>10년 전엔 무리 중 가장 체구가 작아, 늘 소꿉친구들에게 보호받던 ‘막내’ 자리였다.</p>
-          <p class="origin">동네 어른들이 ‘마카베 댁 도련님’이라 부르던 것에서 변형됨. 친구들이 “아야토는 봇짱(坊っちゃん)이지”라며 붙여준 이름.</p>
+          <p>동네 어른들이 ‘마카베 댁 도련님’이라 부르던 것에서 변형됨. 친구들이 “아야토는 봇짱(坊っちゃん)이지”라며 붙여준 이름.</p>
+          <p class="origin">10년 전엔 무리 중 가장 체구가 작아, 늘 소꿉친구들에게 보호받던 ‘막내’ 자리였다.</p>
         </div>
       </article>
 
@@ -458,8 +494,8 @@
             <dt>싫어하는 과목</dt><dd>체육(땀 나면 머리가 망가짐)</dd>
           </dl>
           <p class="nickname-title">🪞 슌키치</p>
-          <p>어릴 적엔 무리 중 키가 작고 장난기 많은 소란스러운 꼬맹이였지만, 지금은 가장 스타일리시하다.</p>
-          <p class="origin">누나가 ‘명랑 개구리 뿅키치’를 닮았다며 붙여준 별명.</p>
+          <p>누나가 ‘명랑 개구리 뿅키치’를 닮았다며 붙여준 별명.</p>
+          <p class="origin">어릴 적엔 무리 중 키가 작고 장난기 많은 소란스러운 꼬맹이였지만, 지금은 가장 스타일리시하다.</p>
         </div>
       </article>
 
@@ -486,8 +522,8 @@
             <dt>싫어하는 과목</dt><dd>물리</dd>
           </dl>
           <p class="nickname-title">🎭 마코링</p>
-          <p>아역 배우로 활동하던 시절엔 어른스러운 척했지만, 소꿉친구들 앞에서는 그저 당찬 꼬맹이였다.</p>
-          <p class="origin">아역 시절 촬영 현장 스태프들이 붙여준 애칭이 그대로 소꿉친구들 사이로 옮겨붙었다.</p>
+          <p>아역 시절 촬영 현장 스태프들이 붙여준 애칭이 그대로 소꿉친구들 사이로 옮겨붙었다.</p>
+          <p class="origin">촬영 현장에서는 어른스러운 척했지만, 소꿉친구들 앞에서는 그저 당찬 꼬맹이였다.</p>
         </div>
       </article>
 
@@ -514,8 +550,8 @@
             <dt>싫어하는 과목</dt><dd>수학</dd>
           </dl>
           <p class="nickname-title">🏪 쿄군</p>
-          <p>또래보다 점잖지만 유쾌하고 활발한 소년이었다 — 마코토의 아역 시절 대본에 어려운 한자 읽는 법을 달아주곤 했다.</p>
-          <p class="origin">이름의 ‘쿄’에 흔한 호칭 접미사 ‘군(君)’을 더한 무난한 형태. 별스러운 유래는 없지만, 그래서인지 실제로 이렇게 부르는 사람은 몇 안 된다.</p>
+          <p>이름의 ‘쿄’에 흔한 호칭 접미사 ‘군(君)’을 더한 무난한 형태. 별스러운 유래는 없지만, 그래서인지 실제로 이렇게 부르는 사람은 몇 안 된다.</p>
+          <p class="origin">점잖은 편이었지만 유쾌한 구석도 있었던 아이. 마코토의 대본에서 어려운 한자의 읽는 법을 달아주는 등 다정한 구석이 많았다.</p>
         </div>
       </article>
 
