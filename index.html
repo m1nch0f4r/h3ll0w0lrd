@@ -94,9 +94,9 @@
       display:block;
       writing-mode:vertical-rl;
       text-orientation:mixed;
-      font:900 clamp(38px,12vw,58px)/.84 Arial,sans-serif;
-      letter-spacing:-.08em;
-      transform:rotate(180deg);
+      font:900 clamp(28px,8vw,38px)/1.15 "Noto Sans JP","Yu Gothic","Hiragino Kaku Gothic ProN",sans-serif;
+      letter-spacing:.02em;
+      white-space:nowrap;
       color:#fff;
       -webkit-text-stroke:1px #171717;
       z-index:2;
@@ -128,7 +128,9 @@
     /* chapter 1 */
     .place-hero{position:relative;height:235px;margin:0 -24px 20px;overflow:hidden;background:#d9e7e8}
     .place-hero img{width:100%;height:100%;object-fit:cover;display:block}
-    .place-hero:after{content:"HAYASE";position:absolute;right:14px;bottom:6px;color:#fff;font:900 44px/1 Arial,sans-serif;letter-spacing:-.06em;text-shadow:0 2px 12px #0005}
+    .place-hero:after{content:attr(data-title);position:absolute;right:14px;bottom:6px;color:#fff;font:900 clamp(28px,8.5vw,44px)/1 Arial,sans-serif;letter-spacing:-.06em;text-shadow:0 2px 12px #0005}
+    .place-hero.school-hero:after{font-size:clamp(20px,6vw,31px);white-space:nowrap}
+    .school-kicker{position:absolute;top:14px;left:14px;color:#fff;font:800 clamp(10px,2.8vw,13px)/1.2 Arial,sans-serif;letter-spacing:.08em;text-shadow:0 1px 5px #000b}
     .place-title{display:grid;grid-template-columns:1fr 88px;gap:14px;align-items:start}
     .place-title .mark{border-top:5px solid var(--blue);padding-top:8px;color:var(--blue);font:900 13px/1.2 Arial,sans-serif;letter-spacing:.12em}
     .place-copy{margin-top:14px;color:#444}
@@ -292,11 +294,11 @@
       <article class="slide cover" aria-label="표지">
         <header class="cover-head">
           <h1>유루리<br>유라유라</h1>
-          <small>HAYASE · 2000s<br>STORY GUIDE</small>
+          <small>HAYASE CITY · 2000s<br>STORY GUIDE</small>
         </header>
         <div class="cover-single">
           <img class="cover-photo" src="https://i.imgur.com/w4b9Ggf.png" alt="하야세카이간역 방파제 벤치에 모인 다섯 소꿉친구">
-          <div class="vertical-title">HAYASE</div>
+          <div class="vertical-title" lang="ja">ゆるり、ゆらゆら</div>
           <div class="side-note">GUIDE BOOK · 2000s</div>
         </div>
         <footer class="cover-foot"><span>소꿉친구 재회</span><i></i><span>해안 소도시</span><i></i><span>고교 청춘 시뮬레이션</span></footer>
@@ -304,7 +306,7 @@
 
       <article class="slide" aria-label="하야세마치 소개">
         <header class="chapter"><span>CHAPTER 01</span><span>PLACE</span></header>
-        <div class="place-hero"><img src="https://i.imgur.com/Fj5WdZV.jpeg" alt="하야세마치 풍경"></div>
+        <div class="place-hero" data-title="HAYASE CITY"><img src="https://i.imgur.com/Fj5WdZV.jpeg" alt="하야세마치 풍경"></div>
         <div class="place-title">
           <div><p class="eyebrow">다시 돌아온 바닷마을</p><h2>하야세마치</h2></div>
           <div class="mark">10 YEARS<br>AFTER</div>
@@ -343,7 +345,7 @@
 
       <article class="slide" aria-label="하야세고등학교 소개">
         <header class="chapter"><span>CHAPTER 02</span><span>SCHOOL</span></header>
-        <div class="place-hero"><img src="https://i.imgur.com/huHYEa9.jpeg" alt="언덕 위에 자리한 하야세고등학교 전경"></div>
+        <div class="place-hero school-hero" data-title="HAYASE HIGH SCHOOL"><img src="https://i.imgur.com/huHYEa9.jpeg" alt="언덕 위에 자리한 하야세고등학교 전경"><span class="school-kicker">KANAGAWA PREFECTURAL</span></div>
         <div class="place-title">
           <div><p class="eyebrow">언덕 위, 바다가 보이는</p><h2>하야세고등학교</h2></div>
           <div class="mark">2000s<br>PUBLIC HS</div>
